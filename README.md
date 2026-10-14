@@ -58,6 +58,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[Bambu-Lab-Cloud-API](https://github.com/coelacant1/Bambu-Lab-Cloud-API)** — Analysis of the Bambu cloud API. / Bambu 雲端 API 分析。
 - **[open-bamboo-networking](https://github.com/ClusterM/open-bamboo-networking)** — Open replacement for Bambu Studio's proprietary network plugin. / 取代 Bambu Studio 專有網路外掛的開源實作。
 - **[bambu-farm](https://github.com/ellenhp/bambu-farm)** — Self-hostable Bambu Cloud alternative. / 可自架的 Bambu Cloud 替代。
+- **[open-bambu-networking-plugin](https://github.com/persano/open-bambu-networking-plugin)** — Open-source OrcaSlicer networking plugin: cloud printing, remote liveview, AMS sync. / OrcaSlicer 開源網路外掛：雲端列印、遠端鏡頭、AMS 同步。
 
 ## Home Assistant & automation / Home Assistant 與自動化
 
@@ -77,6 +78,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[OpenBL](https://github.com/opensourcemanufacturing/OpenBL)** — Exploration of printer hardware and firmware. / 印表機軟硬體探索。
 - **[bambu-cuts](https://github.com/unrelatedlabs/bambu-cuts)** — Cutter and plotter for the A1 mini. / A1 mini 切割與繪圖。
 - **[Bambu-Poop-Conveyor-ESP32](https://github.com/t0nyz0/Bambu-Poop-Conveyor-ESP32)** — ESP32 waste conveyor with MQTT automation. / ESP32 廢料輸送帶。
+- **[PandaStatusOS](https://github.com/jeremykenedy/PandaStatusOS)** — Clean-room open firmware for the BIGTREETECH Panda Status P2 LED bar. / BIGTREETECH Panda Status P2 燈條的 clean-room 開源韌體。
 
 ## Slicers, profiles & G-code / 切片、設定檔與 G-code
 
@@ -90,6 +92,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[StudioBridge](https://github.com/Rdiger-36/StudioBridge)** — Adds printers from other accounts to Bambu Studio. / 把其他帳號的印表機加入 Bambu Studio。
 - **[docker-orcaslicer](https://github.com/linuxserver/docker-orcaslicer)** — OrcaSlicer in a browser-accessible container. / 可用瀏覽器開的 OrcaSlicer 容器。
 - **[docker-bambustudio](https://github.com/linuxserver/docker-bambustudio)** — Bambu Studio in a browser-accessible container. / 可用瀏覽器開的 Bambu Studio 容器。
+- **[layer-rescue](https://github.com/EmirhanSyl/layer-rescue)** — Bambu Studio post-processing script to resume a failed print from any layer. / 從任意層續印失敗作品的 Bambu Studio 後處理腳本。
 
 ## Print farms & queues / 列印農場與佇列
 
@@ -107,6 +110,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[bambu-spoolman](https://github.com/mrkirby153/bambu-spoolman)** — Bambu integration for Spoolman. / Spoolman 的 Bambu 整合。
 - **[HaspelSync](https://github.com/Rdiger-36/HaspelSync)** — Track filament consumption. / 追蹤線材用量。
 - **[flipper-bambu](https://github.com/uzyn/flipper-bambu)** — Flipper Zero NFC parser for Bambu filament. / Flipper Zero 線材 NFC 解析。
+- **[bambu-spoolman-bridge](https://github.com/Yarasarda/bambu-spoolman-bridge)** — Tracks third-party filament usage in Spoolman without switching to LAN-only mode. / 不必切成純區網模式即可把第三方線材用量同步到 Spoolman。
 
 ## Camera & timelapse / 鏡頭與縮時
 
@@ -131,6 +135,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[OctoPrint-OctoEverywhere](https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere)** — Remote access that also supports Bambu printers. / 支援 Bambu 的遠端存取。
 - **[bambu-printer-mcp](https://github.com/DMontgomery40/bambu-printer-mcp)** — MCP server for Bambu printers. / Bambu 的 MCP server。
 - **[bambu-mcp](https://github.com/griches/bambu-mcp)** — MCP server for multi-printer control. / 多機控制 MCP server。
+- **[bambu](https://github.com/voska/bambu)** — Agent-friendly LAN CLI to slice, preflight, send and monitor prints. / 從終端機切片、預檢、送印與監看的區網 CLI，適合 AI 代理。
 
 ## Closed-source / commercial (for reference) / 閉源／商業（對照用）
 
