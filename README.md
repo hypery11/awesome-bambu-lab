@@ -67,6 +67,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[Bambu-HomeAssistant-Flows](https://github.com/WolfwithSword/Bambu-HomeAssistant-Flows)** — HA dashboards and Node-RED flows. / HA 儀表板與 Node-RED 流程。
 - **[printwatch-card](https://github.com/drkpxl/printwatch-card)** — HA dashboard card for printer monitoring. / 監控印表機的 HA 卡片。
 - **[SpoolmanSync](https://github.com/gibz104/SpoolmanSync)** — Automatic Spoolman tracking via HA. / 透過 HA 自動同步 Spoolman。
+- **[HA-Panda-PWR](https://github.com/62fixolab/HA-Panda-PWR)** — Home Assistant integration for the BIGTREETECH Panda PWR smart plug. / BIGTREETECH Panda PWR 智慧插座的 Home Assistant 整合。
 
 ## Firmware & hardware mods / 韌體與硬體改裝
 
@@ -77,6 +78,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[x1-expander](https://github.com/jwise/x1-expander)** — Expander board for the X1 Carbon. / X1 Carbon 擴充板。
 - **[OpenBL](https://github.com/opensourcemanufacturing/OpenBL)** — Exploration of printer hardware and firmware. / 印表機軟硬體探索。
 - **[bambu-cuts](https://github.com/unrelatedlabs/bambu-cuts)** — Cutter and plotter for the A1 mini. / A1 mini 切割與繪圖。
+- **[BambuScribe](https://github.com/Animesh-Varma/BambuScribe)** — Turn a Bambu Lab printer into a pen plotter with safe custom G-code (no slicer hacks). / 把 Bambu 印表機安全變成筆式繪圖機，產生自訂 G-code。
 - **[Bambu-Poop-Conveyor-ESP32](https://github.com/t0nyz0/Bambu-Poop-Conveyor-ESP32)** — ESP32 waste conveyor with MQTT automation. / ESP32 廢料輸送帶。
 - **[PandaStatusOS](https://github.com/jeremykenedy/PandaStatusOS)** — Clean-room open firmware for the BIGTREETECH Panda Status P2 LED bar. / BIGTREETECH Panda Status P2 燈條的 clean-room 開源韌體。
 
@@ -111,6 +113,8 @@ The projects people actually share. Everything below is the map around them, not
 - **[HaspelSync](https://github.com/Rdiger-36/HaspelSync)** — Track filament consumption. / 追蹤線材用量。
 - **[flipper-bambu](https://github.com/uzyn/flipper-bambu)** — Flipper Zero NFC parser for Bambu filament. / Flipper Zero 線材 NFC 解析。
 - **[bambu-spoolman-bridge](https://github.com/Yarasarda/bambu-spoolman-bridge)** — Tracks third-party filament usage in Spoolman without switching to LAN-only mode. / 不必切成純區網模式即可把第三方線材用量同步到 Spoolman。
+- **[TigerTag-Studio-Manager](https://github.com/TigerTag-Project/TigerTag-Studio-Manager)** — Desktop printer and filament manager for the TigerTag open NFC standard. / TigerTag 開源 NFC 標準的桌面印表機與線材管理。
+- **[TigerSpool-RFID](https://github.com/TigerTag-Project/TigerSpool-RFID)** — ESP32 + PN532 RFID spool scanner that assigns filament to printer slots. / ESP32＋PN532 線材 RFID 掃描器，掃完對應到印表機槽位。
 
 ## Camera & timelapse / 鏡頭與縮時
 
@@ -136,6 +140,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[bambu-printer-mcp](https://github.com/DMontgomery40/bambu-printer-mcp)** — MCP server for Bambu printers. / Bambu 的 MCP server。
 - **[bambu-mcp](https://github.com/griches/bambu-mcp)** — MCP server for multi-printer control. / 多機控制 MCP server。
 - **[bambu](https://github.com/voska/bambu)** — Agent-friendly LAN CLI to slice, preflight, send and monitor prints. / 從終端機切片、預檢、送印與監看的區網 CLI，適合 AI 代理。
+- **[Kiln](https://github.com/codeofaxel/Kiln)** — MCP server for AI agents to design, slice and print on Bambu Lab and other printers. / 讓 AI 代理設計、切片並在 Bambu 等印表機列印的 MCP server。
 
 ## Closed-source / commercial (for reference) / 閉源／商業（對照用）
 
