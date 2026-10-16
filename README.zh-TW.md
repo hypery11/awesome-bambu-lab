@@ -58,6 +58,7 @@
 - **[open-bamboo-networking](https://github.com/ClusterM/open-bamboo-networking)** — 取代 Bambu Studio 專有網路外掛的開源實作。
 - **[bambu-farm](https://github.com/ellenhp/bambu-farm)** — 可自架的 Bambu Cloud 替代。
 - **[open-bambu-networking-plugin](https://github.com/persano/open-bambu-networking-plugin)** — OrcaSlicer 開源網路外掛：雲端列印、遠端鏡頭、AMS 同步。
+- **[bambu-proxy](https://github.com/disconn3ct/bambu-proxy)** — MQTT 代理，讓多個客戶端共用一台 Bambu 印表機連線。
 
 ## Home Assistant 與自動化
 
@@ -67,6 +68,7 @@
 - **[printwatch-card](https://github.com/drkpxl/printwatch-card)** — 監控印表機的 HA 卡片。
 - **[SpoolmanSync](https://github.com/gibz104/SpoolmanSync)** — 透過 HA 自動同步 Spoolman。
 - **[HA-Panda-PWR](https://github.com/62fixolab/HA-Panda-PWR)** — BIGTREETECH Panda PWR 智慧插座的 Home Assistant 整合。
+- **[homeassistant-app-bambuddy](https://github.com/Spegeli/homeassistant-app-bambuddy)** — 把 BamBuddy 包成 Home Assistant App（Supervisor）。
 
 ## 韌體與硬體改裝
 
@@ -101,6 +103,7 @@
 - **[bambu-farm](https://github.com/TFyre/bambu-farm)** — 多台印表機網頁介面。
 - **[fdm-monster](https://github.com/fdm-monster/fdm-monster)** — 印表機農場管理平台。
 - **[print-farm-manager](https://github.com/joeltelling/print-farm-manager)** — 多品牌自架農場管理。
+- **[bambu-gateway](https://github.com/leolobato/bambu-gateway)** — 自架區網網頁與 REST API，監看並送印 Bambu 印表機。
 
 ## 線材、AMS 與 RFID
 
@@ -132,10 +135,13 @@
 - **[panda-be-free](https://github.com/MiguelSchulz/panda-be-free)** — 開源 iOS 儀表板。
 - **[BambuBoard](https://github.com/t0nyz0/BambuBoard)** — 近即時網頁儀表板。
 - **[Bambulabs-Exporter](https://github.com/Aetrius/Bambulabs-Exporter)** — Prometheus exporter。
+- **[xtouch](https://github.com/xperiments-in/xtouch)** — 控制與監看 Bambu Lab 印表機的 ESP32 觸控螢幕韌體。
+- **[PrintGlance](https://github.com/talic/PrintGlance)** — Mac 選單列 App，區網顯示 Bambu 列印進度與暫停／失敗原因。
 
 ## 橋接與 AI 代理
 
 - **[OctoPrint-OctoEverywhere](https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere)** — 支援 Bambu 的遠端存取。
+- **[OctoPrint-BambuPrinter](https://github.com/jneilliii/OctoPrint-BambuPrinter)** — 連接 Bambu Lab 印表機的 OctoPrint 外掛。
 - **[bambu-printer-mcp](https://github.com/DMontgomery40/bambu-printer-mcp)** — Bambu 的 MCP server。
 - **[bambu-mcp](https://github.com/griches/bambu-mcp)** — 多機控制 MCP server。
 - **[bambu](https://github.com/voska/bambu)** — 從終端機切片、預檢、送印與監看的區網 CLI，適合 AI 代理。
