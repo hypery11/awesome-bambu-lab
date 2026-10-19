@@ -59,6 +59,7 @@
 - **[bambu-farm](https://github.com/ellenhp/bambu-farm)** — 可自架的 Bambu Cloud 替代。
 - **[open-bambu-networking-plugin](https://github.com/persano/open-bambu-networking-plugin)** — OrcaSlicer 開源網路外掛：雲端列印、遠端鏡頭、AMS 同步。
 - **[bambu-proxy](https://github.com/disconn3ct/bambu-proxy)** — MQTT 代理，讓多個客戶端共用一台 Bambu 印表機連線。
+- **[bambulab-virtual-printer](https://github.com/tbc0309/bambulab-virtual-printer)** — 本地 Bambu 印表機與 AMS MQTT 模擬器，附網頁管理介面，不需真機即可測試客戶端。
 
 ## Home Assistant 與自動化
 
@@ -69,6 +70,7 @@
 - **[SpoolmanSync](https://github.com/gibz104/SpoolmanSync)** — 透過 HA 自動同步 Spoolman。
 - **[HA-Panda-PWR](https://github.com/62fixolab/HA-Panda-PWR)** — BIGTREETECH Panda PWR 智慧插座的 Home Assistant 整合。
 - **[homeassistant-app-bambuddy](https://github.com/Spegeli/homeassistant-app-bambuddy)** — 把 BamBuddy 包成 Home Assistant App（Supervisor）。
+- **[ha-bambulab-blueprints](https://github.com/pleasantone/ha-bambulab-blueprints)** — Home Assistant 藍圖：濾網耗損追蹤、自動斷電、腔室加熱安全與列印通知。
 
 ## 韌體與硬體改裝
 
@@ -96,6 +98,8 @@
 - **[docker-orcaslicer](https://github.com/linuxserver/docker-orcaslicer)** — 可用瀏覽器開的 OrcaSlicer 容器。
 - **[docker-bambustudio](https://github.com/linuxserver/docker-bambustudio)** — 可用瀏覽器開的 Bambu Studio 容器。
 - **[layer-rescue](https://github.com/EmirhanSyl/layer-rescue)** — 從任意層續印失敗作品的 Bambu Studio 後處理腳本。
+- **[preset-porter](https://github.com/OMRITGM/preset-porter)** — 瀏覽器工具，修復換印表機後在 Bambu Studio 變成「不支援」的線材預設。
+- **[shambu](https://github.com/Shavvimal/shambu)** — 建立、檢查與修補 Bambu Studio .3mf 專案並無頭切片的 CLI 與 Claude Code 外掛。
 
 ## 列印農場與佇列
 
@@ -104,6 +108,7 @@
 - **[fdm-monster](https://github.com/fdm-monster/fdm-monster)** — 印表機農場管理平台。
 - **[print-farm-manager](https://github.com/joeltelling/print-farm-manager)** — 多品牌自架農場管理。
 - **[bambu-gateway](https://github.com/leolobato/bambu-gateway)** — 自架區網網頁與 REST API，監看並送印 Bambu 印表機。
+- **[fabrica](https://github.com/wsturner88/fabrica)** — 本地多品牌列印農場儀表板，含鏡頭、AMS 線材控制與給 AI 代理的 MCP 工具。
 
 ## 線材、AMS 與 RFID
 
@@ -117,6 +122,7 @@
 - **[bambu-spoolman-bridge](https://github.com/Yarasarda/bambu-spoolman-bridge)** — 不必切成純區網模式即可把第三方線材用量同步到 Spoolman。
 - **[TigerTag-Studio-Manager](https://github.com/TigerTag-Project/TigerTag-Studio-Manager)** — TigerTag 開源 NFC 標準的桌面印表機與線材管理。
 - **[TigerSpool-RFID](https://github.com/TigerTag-Project/TigerSpool-RFID)** — ESP32＋PN532 線材 RFID 掃描器，掃完對應到印表機槽位。
+- **[bambu-ams-spool-sync](https://github.com/demonkazuya/bambu-ams-spool-sync)** — Home Assistant 整合，把 Spoolman Sync 的線材指派推送到 Bambu AMS 槽位。
 
 ## 鏡頭與縮時
 
@@ -137,6 +143,8 @@
 - **[Bambulabs-Exporter](https://github.com/Aetrius/Bambulabs-Exporter)** — Prometheus exporter。
 - **[xtouch](https://github.com/xperiments-in/xtouch)** — 控制與監看 Bambu Lab 印表機的 ESP32 觸控螢幕韌體。
 - **[PrintGlance](https://github.com/talic/PrintGlance)** — Mac 選單列 App，區網顯示 Bambu 列印進度與暫停／失敗原因。
+- **[toothpeek](https://github.com/loicbisiere/toothpeek)** — Mac 選單列 App，區網顯示 Bambu 印表機即時鏡頭、列印進度與通知。
+- **[print-heatmap](https://github.com/artemnovichkov/print-heatmap)** — 把 Bambu 列印紀錄畫成 GitHub 風格熱度圖，放在個人 README 或釘選 gist。
 
 ## 橋接與 AI 代理
 
