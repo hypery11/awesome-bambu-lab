@@ -71,6 +71,8 @@
 - **[HA-Panda-PWR](https://github.com/62fixolab/HA-Panda-PWR)** — BIGTREETECH Panda PWR 智慧插座的 Home Assistant 整合。
 - **[homeassistant-app-bambuddy](https://github.com/Spegeli/homeassistant-app-bambuddy)** — 把 BamBuddy 包成 Home Assistant App（Supervisor）。
 - **[ha-bambulab-blueprints](https://github.com/pleasantone/ha-bambulab-blueprints)** — Home Assistant 藍圖：濾網耗損追蹤、自動斷電、腔室加熱安全與列印通知。
+- **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — 支援 Bambu Lab 等印表機的 Home Assistant 儀表板卡片，有繪製的印表機、即時鏡頭與實際顏色的 AMS 線軸。
+- **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — 以 Home Assistant App 或 Docker 執行的本地儀表板，並排管理 Bambu Lab 與 Klipper 印表機，內建線材管理、鏡頭與列印紀錄。
 
 ## 韌體與硬體改裝
 
@@ -84,6 +86,7 @@
 - **[BambuScribe](https://github.com/Animesh-Varma/BambuScribe)** — 把 Bambu 印表機安全變成筆式繪圖機，產生自訂 G-code。
 - **[Bambu-Poop-Conveyor-ESP32](https://github.com/t0nyz0/Bambu-Poop-Conveyor-ESP32)** — ESP32 廢料輸送帶。
 - **[PandaStatusOS](https://github.com/jeremykenedy/PandaStatusOS)** — BIGTREETECH Panda Status P2 燈條的 clean-room 開源韌體。
+- **[ReBLLED](https://github.com/brossow/ReBLLED)** — BLLED ESP32 燈條控制器的替代韌體，自動點亮機箱並顯示列印狀態。
 
 ## 切片、設定檔與 G-code
 
@@ -100,6 +103,8 @@
 - **[layer-rescue](https://github.com/EmirhanSyl/layer-rescue)** — 從任意層續印失敗作品的 Bambu Studio 後處理腳本。
 - **[preset-porter](https://github.com/OMRITGM/preset-porter)** — 瀏覽器工具，修復換印表機後在 Bambu Studio 變成「不支援」的線材預設。
 - **[shambu](https://github.com/Shavvimal/shambu)** — 建立、檢查與修補 Bambu Studio .3mf 專案並無頭切片的 CLI 與 Claude Code 外掛。
+- **[PausePalette](https://github.com/DanaLeeTech/PausePalette)** — 規劃顏色順序並插入換線暫停，讓列印顏色數超過 AMS 槽位數。
+- **[pandy-slicer](https://github.com/gccammelli/pandy-slicer)** — 把 Bambu Studio 命令列切片包成 Home Assistant add-on 或 Docker 容器，讓 Pandy App 在 LAN-only 模式列印 MakerWorld 模型。
 
 ## 列印農場與佇列
 
@@ -145,6 +150,7 @@
 - **[PrintGlance](https://github.com/talic/PrintGlance)** — Mac 選單列 App，區網顯示 Bambu 列印進度與暫停／失敗原因。
 - **[toothpeek](https://github.com/loicbisiere/toothpeek)** — Mac 選單列 App，區網顯示 Bambu 印表機即時鏡頭、列印進度與通知。
 - **[print-heatmap](https://github.com/artemnovichkov/print-heatmap)** — 把 Bambu 列印紀錄畫成 GitHub 風格熱度圖，放在個人 README 或釘選 gist。
+- **[BambuBar](https://github.com/GuoDaiYi/BambuBar)** — 原生 macOS 選單列監看工具，透過 Bambu 雲端帳號顯示進度、層數、剩餘時間與溫度。
 
 ## 橋接與 AI 代理
 
@@ -154,6 +160,9 @@
 - **[bambu-mcp](https://github.com/griches/bambu-mcp)** — 多機控制 MCP server。
 - **[bambu](https://github.com/voska/bambu)** — 從終端機切片、預檢、送印與監看的區網 CLI，適合 AI 代理。
 - **[Kiln](https://github.com/codeofaxel/Kiln)** — 讓 AI 代理設計、切片並在 Bambu 等印表機列印的 MCP server。
+- **[bamboozle](https://github.com/nxmxbbd/bamboozle)** — 僅用區網的 Apple Home 橋接，在 HomeKit 顯示 Bambu 印表機的進度、狀態與鏡頭，不需 Home Assistant 或 Homebridge。
+- **[printshop-mcp](https://github.com/FireBall1725/printshop-mcp)** — Bambuddy 與 Spoolman 的 MCP 伺服器，讓 AI 代理查線材庫存、送出已切片 3MF 並追蹤列印。
+- **[bambustudio-mcp](https://github.com/subhashdasyam/bambustudio-mcp)** — Bambu Studio 切片軟體的 MCP 伺服器，可從 Claude Code 或 Codex 檢視零件、設定已存的 3MF 專案並比較切片結果。
 
 ## 閉源／商業（對照用）
 
