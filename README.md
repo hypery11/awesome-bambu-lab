@@ -60,6 +60,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[open-bambu-networking-plugin](https://github.com/persano/open-bambu-networking-plugin)** — Open-source OrcaSlicer networking plugin: cloud printing, remote liveview, AMS sync.
 - **[bambu-proxy](https://github.com/disconn3ct/bambu-proxy)** — MQTT proxy that multiplexes many clients onto one Bambu printer connection.
 - **[bambulab-virtual-printer](https://github.com/tbc0309/bambulab-virtual-printer)** — Local Bambu printer and AMS MQTT simulator with a web dashboard, for testing clients without a real printer.
+- **[bambu-lan-cli](https://github.com/zxy8060/bambu-lan-cli)** — Experimental Python CLI for file checks, Bambu Studio CLI slicing, LAN status and signed print sending with AMS or external spool; you supply your own authorized signing identity.
 
 ## Home Assistant & automation
 
@@ -73,6 +74,7 @@ The projects people actually share. Everything below is the map around them, not
 - **[ha-bambulab-blueprints](https://github.com/pleasantone/ha-bambulab-blueprints)** — Home Assistant blueprints for filter wear tracking, auto power-down, chamber heater safety and print notifications.
 - **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — Home Assistant dashboard card for Bambu Lab and other printers, with a drawn printer, live camera and AMS spools in their real colours.
 - **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — Local Home Assistant app or Docker dashboard for Bambu Lab and Klipper printers with built-in filament manager, cameras and print history.
+- **[bambuddy-dragonbreath](https://github.com/rmonk/bambuddy-dragonbreath)** — Sidecar that turns a Panda Breath chamber heater (DragonBreath firmware) on and off from Bambuddy print events, picking the temperature from the filaments the print uses.
 
 ## Firmware & hardware mods
 
@@ -147,10 +149,11 @@ The projects people actually share. Everything below is the map around them, not
 - **[BambuBoard](https://github.com/t0nyz0/BambuBoard)** — Near real-time web dashboard.
 - **[Bambulabs-Exporter](https://github.com/Aetrius/Bambulabs-Exporter)** — Prometheus exporter.
 - **[xtouch](https://github.com/xperiments-in/xtouch)** — ESP32 touchscreen firmware for controlling and monitoring Bambu Lab printers.
+- **[Bambu OLED Info](https://github.com/Asimmimx/bambu-oled-info)** — ESP32-C3 desk gadget with a small OLED and rotary knob that shows live printer status over local MQTT or your Bambu account; read-only.
 - **[PrintGlance](https://github.com/talic/PrintGlance)** — Mac menu bar app for Bambu print progress and failure reasons over LAN.
 - **[toothpeek](https://github.com/loicbisiere/toothpeek)** — Mac menu bar app with live camera, print progress and notifications for Bambu printers over LAN.
 - **[print-heatmap](https://github.com/artemnovichkov/print-heatmap)** — GitHub-style heatmap of your Bambu printing history for a profile README or pinned gist.
-- **[BambuBar](https://github.com/GuoDaiYi/BambuBar)** — Native macOS menu bar monitor for Bambu printers via your Bambu cloud account, with progress, layers, ETA and temperatures.
+- **[PrintCtrl](https://github.com/VoidedKN0X/PrintCtrl)** — Telemetry-free Android app for self-hosted Bambuddy and Spoolman servers, covering your Bambu printers and filament spools.
 
 ## Bridges & AI agents
 

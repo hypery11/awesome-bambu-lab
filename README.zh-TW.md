@@ -60,6 +60,7 @@
 - **[open-bambu-networking-plugin](https://github.com/persano/open-bambu-networking-plugin)** — OrcaSlicer 開源網路外掛：雲端列印、遠端鏡頭、AMS 同步。
 - **[bambu-proxy](https://github.com/disconn3ct/bambu-proxy)** — MQTT 代理，讓多個客戶端共用一台 Bambu 印表機連線。
 - **[bambulab-virtual-printer](https://github.com/tbc0309/bambulab-virtual-printer)** — 本地 Bambu 印表機與 AMS MQTT 模擬器，附網頁管理介面，不需真機即可測試客戶端。
+- **[bambu-lan-cli](https://github.com/zxy8060/bambu-lan-cli)** — 實驗性 Python 命令列工具，可檢查檔案、用 Bambu Studio CLI 切片、查區網狀態，並搭配 AMS 或外掛料架送出簽章列印；簽章身分需自備且經授權。
 
 ## Home Assistant 與自動化
 
@@ -73,6 +74,7 @@
 - **[ha-bambulab-blueprints](https://github.com/pleasantone/ha-bambulab-blueprints)** — Home Assistant 藍圖：濾網耗損追蹤、自動斷電、腔室加熱安全與列印通知。
 - **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — 支援 Bambu Lab 等印表機的 Home Assistant 儀表板卡片，有繪製的印表機、即時鏡頭與實際顏色的 AMS 線軸。
 - **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — 以 Home Assistant App 或 Docker 執行的本地儀表板，並排管理 Bambu Lab 與 Klipper 印表機，內建線材管理、鏡頭與列印紀錄。
+- **[bambuddy-dragonbreath](https://github.com/rmonk/bambuddy-dragonbreath)** — 依 Bambuddy 的列印事件開關 Panda Breath 艙溫加熱器（DragonBreath 韌體），並依該次列印實際使用的耗材決定溫度。
 
 ## 韌體與硬體改裝
 
@@ -147,10 +149,11 @@
 - **[BambuBoard](https://github.com/t0nyz0/BambuBoard)** — 近即時網頁儀表板。
 - **[Bambulabs-Exporter](https://github.com/Aetrius/Bambulabs-Exporter)** — Prometheus exporter。
 - **[xtouch](https://github.com/xperiments-in/xtouch)** — 控制與監看 Bambu Lab 印表機的 ESP32 觸控螢幕韌體。
+- **[Bambu OLED Info](https://github.com/Asimmimx/bambu-oled-info)** — ESP32-C3 桌上小裝置，用小 OLED 與旋鈕透過區網 MQTT 或 Bambu 帳號顯示即時列印狀態；只讀取不控制。
 - **[PrintGlance](https://github.com/talic/PrintGlance)** — Mac 選單列 App，區網顯示 Bambu 列印進度與暫停／失敗原因。
 - **[toothpeek](https://github.com/loicbisiere/toothpeek)** — Mac 選單列 App，區網顯示 Bambu 印表機即時鏡頭、列印進度與通知。
 - **[print-heatmap](https://github.com/artemnovichkov/print-heatmap)** — 把 Bambu 列印紀錄畫成 GitHub 風格熱度圖，放在個人 README 或釘選 gist。
-- **[BambuBar](https://github.com/GuoDaiYi/BambuBar)** — 原生 macOS 選單列監看工具，透過 Bambu 雲端帳號顯示進度、層數、剩餘時間與溫度。
+- **[PrintCtrl](https://github.com/VoidedKN0X/PrintCtrl)** — 無遙測的 Android App，連線自架的 Bambuddy 與 Spoolman 伺服器，管理 Bambu 印表機與耗材線軸。
 
 ## 橋接與 AI 代理
 
