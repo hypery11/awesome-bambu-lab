@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-105-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--22-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-107-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--23-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -38,6 +38,7 @@
 - **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — 支援 Bambu Lab 等印表機的 Home Assistant 儀表板卡片，有繪製的印表機、即時鏡頭與實際顏色的 AMS 線軸。 _(Home Assistant 與自動化)_
 - **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — 以 Home Assistant App 或 Docker 執行的本地儀表板，並排管理 Bambu Lab 與 Klipper 印表機，內建線材管理、鏡頭與列印紀錄。 _(Home Assistant 與自動化)_
 - **[bambuddy-dragonbreath](https://github.com/rmonk/bambuddy-dragonbreath)** — 依 Bambuddy 的列印事件開關 Panda Breath 艙溫加熱器（DragonBreath 韌體），並依該次列印實際使用的耗材決定溫度。 _(Home Assistant 與自動化)_
+- **[bambu-dashboard-card](https://github.com/kai-wei-kfuse/bambu-dashboard-card)** — 以 ha-bambulab 為基礎的多台印表機 Home Assistant 儀表板卡片，含鏡頭、控制、AMS 線材與專案瀏覽；仍在早期開發，尚無正式版本。 _(Home Assistant 與自動化)_
 
 <details>
 <summary>本週另外新增 25 條</summary>
@@ -62,6 +63,7 @@
 - **[BambuDeck](https://github.com/Ripwords/BambuDeck)** — 自架的行動版 PWA，管理區網模式的 Bambu 印表機：列印、鏡頭、逐層路徑預覽、檔案瀏覽、AMS 線材與 Home Assistant MQTT Discovery，可用 Docker 執行。 _(儀表板、螢幕與 App)_
 - **[Layerwatch](https://github.com/d01/layerwatch)** — Android App，直接在自家網路監看與控制 Bambu 印表機，含即時鏡頭與鎖定畫面通知；不需雲端帳號、無廣告與追蹤。 _(儀表板、螢幕與 App)_
 - **[BambuBar](https://github.com/kopytjuk/bambubar)** — macOS 選單列 App，透過區網 MQTT 顯示即時列印進度、剩餘時間、溫度與 AMS 濕度。 _(儀表板、螢幕與 App)_
+- **[Bambu Bar](https://github.com/rolottr/bambu-bar)** — 原生 macOS 選單列 App 與桌面小工具，透過區網同時監看多台 Bambu 印表機，提供 3D 印表機模型、AMS 剩餘克數、列印控制與通知；不需帳號或雲端。 _(儀表板、螢幕與 App)_
 - **[OctoPrint-BambuPrinter](https://github.com/jneilliii/OctoPrint-BambuPrinter)** — 連接 Bambu Lab 印表機的 OctoPrint 外掛。 _(橋接與 AI 代理)_
 - **[bamboozle](https://github.com/nxmxbbd/bamboozle)** — 僅用區網的 Apple Home 橋接，在 HomeKit 顯示 Bambu 印表機的進度、狀態與鏡頭，不需 Home Assistant 或 Homebridge。 _(橋接與 AI 代理)_
 - **[printshop-mcp](https://github.com/FireBall1725/printshop-mcp)** — Bambuddy 與 Spoolman 的 MCP 伺服器，讓 AI 代理查線材庫存、送出已切片 3MF 並追蹤列印。 _(橋接與 AI 代理)_
@@ -142,6 +144,7 @@
 - **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — 支援 Bambu Lab 等印表機的 Home Assistant 儀表板卡片，有繪製的印表機、即時鏡頭與實際顏色的 AMS 線軸。
 - **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — 以 Home Assistant App 或 Docker 執行的本地儀表板，並排管理 Bambu Lab 與 Klipper 印表機，內建線材管理、鏡頭與列印紀錄。
 - **[bambuddy-dragonbreath](https://github.com/rmonk/bambuddy-dragonbreath)** — 依 Bambuddy 的列印事件開關 Panda Breath 艙溫加熱器（DragonBreath 韌體），並依該次列印實際使用的耗材決定溫度。
+- **[bambu-dashboard-card](https://github.com/kai-wei-kfuse/bambu-dashboard-card)** — 以 ha-bambulab 為基礎的多台印表機 Home Assistant 儀表板卡片，含鏡頭、控制、AMS 線材與專案瀏覽；仍在早期開發，尚無正式版本。
 
 ## 韌體與硬體改裝
 
@@ -227,6 +230,7 @@
 - **[BambuDeck](https://github.com/Ripwords/BambuDeck)** — 自架的行動版 PWA，管理區網模式的 Bambu 印表機：列印、鏡頭、逐層路徑預覽、檔案瀏覽、AMS 線材與 Home Assistant MQTT Discovery，可用 Docker 執行。
 - **[Layerwatch](https://github.com/d01/layerwatch)** — Android App，直接在自家網路監看與控制 Bambu 印表機，含即時鏡頭與鎖定畫面通知；不需雲端帳號、無廣告與追蹤。
 - **[BambuBar](https://github.com/kopytjuk/bambubar)** — macOS 選單列 App，透過區網 MQTT 顯示即時列印進度、剩餘時間、溫度與 AMS 濕度。
+- **[Bambu Bar](https://github.com/rolottr/bambu-bar)** — 原生 macOS 選單列 App 與桌面小工具，透過區網同時監看多台 Bambu 印表機，提供 3D 印表機模型、AMS 剩餘克數、列印控制與通知；不需帳號或雲端。
 
 ## 橋接與 AI 代理
 

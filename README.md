@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-105-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--22-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-107-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--23-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -38,6 +38,7 @@ Added between 2026-10-16 and 2026-10-22 (derived from git history).
 - **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — Home Assistant dashboard card for Bambu Lab and other printers, with a drawn printer, live camera and AMS spools in their real colours. _(Home Assistant & automation)_
 - **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — Local Home Assistant app or Docker dashboard for Bambu Lab and Klipper printers with built-in filament manager, cameras and print history. _(Home Assistant & automation)_
 - **[bambuddy-dragonbreath](https://github.com/rmonk/bambuddy-dragonbreath)** — Sidecar that turns a Panda Breath chamber heater (DragonBreath firmware) on and off from Bambuddy print events, picking the temperature from the filaments the print uses. _(Home Assistant & automation)_
+- **[bambu-dashboard-card](https://github.com/kai-wei-kfuse/bambu-dashboard-card)** — Multi-printer Home Assistant dashboard card built on ha-bambulab, with camera, controls, AMS spools and a project browser; early development, no stable release yet. _(Home Assistant & automation)_
 
 <details>
 <summary>25 more added this week</summary>
@@ -62,6 +63,7 @@ Added between 2026-10-16 and 2026-10-22 (derived from git history).
 - **[BambuDeck](https://github.com/Ripwords/BambuDeck)** — Self-hosted mobile PWA for Bambu printers in LAN mode: prints, cameras, toolpath layer preview, file browser, AMS filament and Home Assistant MQTT Discovery; runs in Docker. _(Dashboards, displays & apps)_
 - **[Layerwatch](https://github.com/d01/layerwatch)** — Android app to watch and control Bambu printers directly over your own network, with live camera and lock-screen alerts; no cloud account, ads or tracking. _(Dashboards, displays & apps)_
 - **[BambuBar](https://github.com/kopytjuk/bambubar)** — macOS menu bar app showing live print progress, time left, temperatures and AMS humidity over local MQTT. _(Dashboards, displays & apps)_
+- **[Bambu Bar](https://github.com/rolottr/bambu-bar)** — Native macOS menu bar app and desktop widgets for several Bambu printers over LAN, with a 3D printer model, AMS grams left, print controls and notifications; no account or cloud. _(Dashboards, displays & apps)_
 - **[OctoPrint-BambuPrinter](https://github.com/jneilliii/OctoPrint-BambuPrinter)** — OctoPrint plugin to connect Bambu Lab printers. _(Bridges & AI agents)_
 - **[bamboozle](https://github.com/nxmxbbd/bamboozle)** — LAN-only Apple Home bridge that shows a Bambu printer's progress, status and camera in HomeKit, without Home Assistant or Homebridge. _(Bridges & AI agents)_
 - **[printshop-mcp](https://github.com/FireBall1725/printshop-mcp)** — MCP server for Bambuddy and Spoolman so an AI agent can check filament stock, send a sliced 3MF and watch the job. _(Bridges & AI agents)_
@@ -142,6 +144,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[universal-3d-cards](https://github.com/Rein033/universal-3d-cards)** — Home Assistant dashboard card for Bambu Lab and other printers, with a drawn printer, live camera and AMS spools in their real colours.
 - **[3d-printdash](https://github.com/Freaky-Jay-22/3d-printdash)** — Local Home Assistant app or Docker dashboard for Bambu Lab and Klipper printers with built-in filament manager, cameras and print history.
 - **[bambuddy-dragonbreath](https://github.com/rmonk/bambuddy-dragonbreath)** — Sidecar that turns a Panda Breath chamber heater (DragonBreath firmware) on and off from Bambuddy print events, picking the temperature from the filaments the print uses.
+- **[bambu-dashboard-card](https://github.com/kai-wei-kfuse/bambu-dashboard-card)** — Multi-printer Home Assistant dashboard card built on ha-bambulab, with camera, controls, AMS spools and a project browser; early development, no stable release yet.
 
 ## Firmware & hardware mods
 
@@ -227,6 +230,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[BambuDeck](https://github.com/Ripwords/BambuDeck)** — Self-hosted mobile PWA for Bambu printers in LAN mode: prints, cameras, toolpath layer preview, file browser, AMS filament and Home Assistant MQTT Discovery; runs in Docker.
 - **[Layerwatch](https://github.com/d01/layerwatch)** — Android app to watch and control Bambu printers directly over your own network, with live camera and lock-screen alerts; no cloud account, ads or tracking.
 - **[BambuBar](https://github.com/kopytjuk/bambubar)** — macOS menu bar app showing live print progress, time left, temperatures and AMS humidity over local MQTT.
+- **[Bambu Bar](https://github.com/rolottr/bambu-bar)** — Native macOS menu bar app and desktop widgets for several Bambu printers over LAN, with a 3D printer model, AMS grams left, print controls and notifications; no account or cloud.
 
 ## Bridges & AI agents
 
