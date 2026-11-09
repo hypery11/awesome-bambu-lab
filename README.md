@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-192-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-191-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -41,7 +41,7 @@ Added between 2026-11-03 and 2026-11-09 (derived from git history).
 - **[BambuDeck-HA](https://github.com/demonkazuya/BambuDeck-HA)** — Touchscreen deck for the 2.8" CYD (ESP32-2432S028R) that shows and controls Bambu printers through Home Assistant and ha-bambulab instead of the printer's MQTT: telemetry, cover thumbnail, AMS slots and HMS error dialogs, with web OTA. _(Home Assistant & automation)_
 
 <details>
-<summary>41 more added this week</summary>
+<summary>40 more added this week</summary>
 
 - **[Bambu Printer Card](https://github.com/ossilampe/bambu-printer-card)** — Home Assistant card for ha-bambulab that draws the printer and up to four AMS units as one picture with live values inside, spools in their real colours, and a details view with pause / resume / stop, light and camera; English and German. _(Home Assistant & automation)_
 - **[ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)** — ioBroker adapter that connects Bambu Lab printers locally with the printer's IP, access code and serial number, with no cloud involved. _(Home Assistant & automation)_
@@ -67,7 +67,6 @@ Added between 2026-11-03 and 2026-11-09 (derived from git history).
 - **[Bambu Lab to Spoolman Bridge](https://github.com/andreas-fe/bambu-spoolman-plus)** — Docker service that books filament use from A1, P1 and X1 printers into Spoolman over LAN, reading per-slot grams from the sliced file over FTPS and the active tray over MQTT; README in German. _(Filament, AMS & RFID)_
 - **[Bambu AMS RFID Filament Tracker](https://github.com/Aleitao2/bambu-ams-rfid)** — ESP32 firmware and Home Assistant automations for a P1S + AMS with third-party spools: reads NFC stickers through the AMS's own RFID board over SPI (plus a PN532), looks the tag up in Spoolman and assigns the spool to the tray in Bambuddy. _(Filament, AMS & RFID)_
 - **[FilMaNH](https://github.com/NikolausH76/FilMaNH)** — Local filament and spool manager for Bambu Lab printers on macOS, Windows and Android: follows the printers on your home network and books each print's usage and cost, without cloud or printer settings changes; README in German with an English version. _(Filament, AMS & RFID)_
-- **[BambuPalette](https://github.com/xwnxzz/BambuPalette)** — Offline Windows app that manages filament colours, computes 81 mix ratios between any two spools and exports multi-colour plate 3MF / OBJ files for Bambu Studio; README in Chinese. _(Filament, AMS & RFID)_
 - **[3MF Katalog Manager](https://github.com/Bexxs75/3mf-katalog-manager)** — Local desktop app to catalog 3MF / STL / STEP / OBJ models and manage filament spools and AMS slots on Linux, Windows and macOS; English, German, Spanish and French. _(Filament, AMS & RFID)_
 - **[Bambu Filament Manager for Home Assistant](https://github.com/alex1255/bambu-filament-manager)** — Home Assistant integration that keeps a numbered spool inventory, assigns spools to AMS slots and deducts each finished print's per-slot usage reported by the Bambu Lab integration; first test release from a P1S setup, README in German. _(Filament, AMS & RFID)_
 - **[PrintView](https://github.com/wvfouram/printview)** — Raspberry Pi 5 service for a P1S in LAN-only + Developer Mode: live camera, controls, local spaghetti detection, per-layer timelapses and an Arduino bed relay, used from a phone web app, an Android app or a public link. _(Camera & timelapse)_
@@ -270,7 +269,6 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[Bambu Lab to Spoolman Bridge](https://github.com/andreas-fe/bambu-spoolman-plus)** — Docker service that books filament use from A1, P1 and X1 printers into Spoolman over LAN, reading per-slot grams from the sliced file over FTPS and the active tray over MQTT; README in German.
 - **[Bambu AMS RFID Filament Tracker](https://github.com/Aleitao2/bambu-ams-rfid)** — ESP32 firmware and Home Assistant automations for a P1S + AMS with third-party spools: reads NFC stickers through the AMS's own RFID board over SPI (plus a PN532), looks the tag up in Spoolman and assigns the spool to the tray in Bambuddy.
 - **[FilMaNH](https://github.com/NikolausH76/FilMaNH)** — Local filament and spool manager for Bambu Lab printers on macOS, Windows and Android: follows the printers on your home network and books each print's usage and cost, without cloud or printer settings changes; README in German with an English version.
-- **[BambuPalette](https://github.com/xwnxzz/BambuPalette)** — Offline Windows app that manages filament colours, computes 81 mix ratios between any two spools and exports multi-colour plate 3MF / OBJ files for Bambu Studio; README in Chinese.
 - **[3MF Katalog Manager](https://github.com/Bexxs75/3mf-katalog-manager)** — Local desktop app to catalog 3MF / STL / STEP / OBJ models and manage filament spools and AMS slots on Linux, Windows and macOS; English, German, Spanish and French.
 - **[Bambu Filament Manager for Home Assistant](https://github.com/alex1255/bambu-filament-manager)** — Home Assistant integration that keeps a numbered spool inventory, assigns spools to AMS slots and deducts each finished print's per-slot usage reported by the Bambu Lab integration; first test release from a P1S setup, README in German.
 

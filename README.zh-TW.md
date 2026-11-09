@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-192-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-191-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -41,7 +41,7 @@
 - **[BambuDeck-HA](https://github.com/demonkazuya/BambuDeck-HA)** — 給 2.8 吋 CYD（ESP32-2432S028R）的觸控面板，透過 Home Assistant 與 ha-bambulab 而非直連印表機 MQTT 來顯示與控制 Bambu 印表機：即時數據、封面縮圖、AMS 槽位與 HMS 錯誤對話框，支援網頁 OTA。 _(Home Assistant 與自動化)_
 
 <details>
-<summary>本週另外新增 41 條</summary>
+<summary>本週另外新增 40 條</summary>
 
 - **[Bambu Printer Card](https://github.com/ossilampe/bambu-printer-card)** — 搭配 ha-bambulab 的 Home Assistant 卡片，把印表機和最多四台 AMS 畫成一張圖並在圖中顯示即時數值，料盤以真實線材顏色呈現，另有可暫停／繼續／停止、開燈與看鏡頭的詳細頁；英文與德文介面。 _(Home Assistant 與自動化)_
 - **[ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)** — ioBroker 轉接器，用印表機的 IP、存取碼與序號在區網直接連線，不經雲端。 _(Home Assistant 與自動化)_
@@ -67,7 +67,6 @@
 - **[Bambu Lab to Spoolman Bridge](https://github.com/andreas-fe/bambu-spoolman-plus)** — Docker 服務，透過區網把 A1、P1、X1 的線材用量記入 Spoolman：經 FTPS 讀取切片檔中各槽位克數，經 MQTT 追蹤使用中的料槽；README 為德文。 _(線材、AMS 與 RFID)_
 - **[Bambu AMS RFID Filament Tracker](https://github.com/Aleitao2/bambu-ams-rfid)** — 給 P1S + AMS 搭配第三方線材的 ESP32 韌體與 Home Assistant 自動化：透過 SPI 借用 AMS 原廠 RFID 板（另加 PN532）讀取 NFC 貼紙，到 Spoolman 查詢後在 Bambuddy 把線材指派到對應料槽。 _(線材、AMS 與 RFID)_
 - **[FilMaNH](https://github.com/NikolausH76/FilMaNH)** — Bambu Lab 印表機的本機線材與料卷管理工具，支援 macOS、Windows 與 Android：在家用網路中跟著印表機，記錄每次列印的用量與成本，不需雲端也不必改印表機設定；README 為德文並附英文版。 _(線材、AMS 與 RFID)_
-- **[BambuPalette](https://github.com/xwnxzz/BambuPalette)** — 離線 Windows 程式：管理線材顏色、計算任意兩捲 81 種混色比例，並匯出給 Bambu Studio 的多色底板 3MF／OBJ；README 為中文。 _(線材、AMS 與 RFID)_
 - **[3MF Katalog Manager](https://github.com/Bexxs75/3mf-katalog-manager)** — 本機桌面程式，整理 3MF／STL／STEP／OBJ 模型庫，並管理線材捲與 AMS 槽；支援 Linux、Windows、macOS，介面有英、德、西、法文。 _(線材、AMS 與 RFID)_
 - **[Bambu Filament Manager for Home Assistant](https://github.com/alex1255/bambu-filament-manager)** — Home Assistant 整合：替每捲線材編號建立庫存、指定放在哪個 AMS 槽，列印完成後依 Bambu Lab 整合回報的各槽用量自動扣重；目前是從 P1S 環境出來的第一個測試版，README 為德文。 _(線材、AMS 與 RFID)_
 - **[PrintView](https://github.com/wvfouram/printview)** — 給 LAN-only + 開發者模式 P1S 用的 Raspberry Pi 5 服務：即時鏡頭、控制、本機炒麵偵測、逐層縮時與 Arduino 熱床繼電器，可從手機網頁 App、Android App 或公開連結操作。 _(鏡頭與縮時)_
@@ -270,7 +269,6 @@
 - **[Bambu Lab to Spoolman Bridge](https://github.com/andreas-fe/bambu-spoolman-plus)** — Docker 服務，透過區網把 A1、P1、X1 的線材用量記入 Spoolman：經 FTPS 讀取切片檔中各槽位克數，經 MQTT 追蹤使用中的料槽；README 為德文。
 - **[Bambu AMS RFID Filament Tracker](https://github.com/Aleitao2/bambu-ams-rfid)** — 給 P1S + AMS 搭配第三方線材的 ESP32 韌體與 Home Assistant 自動化：透過 SPI 借用 AMS 原廠 RFID 板（另加 PN532）讀取 NFC 貼紙，到 Spoolman 查詢後在 Bambuddy 把線材指派到對應料槽。
 - **[FilMaNH](https://github.com/NikolausH76/FilMaNH)** — Bambu Lab 印表機的本機線材與料卷管理工具，支援 macOS、Windows 與 Android：在家用網路中跟著印表機，記錄每次列印的用量與成本，不需雲端也不必改印表機設定；README 為德文並附英文版。
-- **[BambuPalette](https://github.com/xwnxzz/BambuPalette)** — 離線 Windows 程式：管理線材顏色、計算任意兩捲 81 種混色比例，並匯出給 Bambu Studio 的多色底板 3MF／OBJ；README 為中文。
 - **[3MF Katalog Manager](https://github.com/Bexxs75/3mf-katalog-manager)** — 本機桌面程式，整理 3MF／STL／STEP／OBJ 模型庫，並管理線材捲與 AMS 槽；支援 Linux、Windows、macOS，介面有英、德、西、法文。
 - **[Bambu Filament Manager for Home Assistant](https://github.com/alex1255/bambu-filament-manager)** — Home Assistant 整合：替每捲線材編號建立庫存、指定放在哪個 AMS 槽，列印完成後依 Bambu Lab 整合回報的各槽用量自動扣重；目前是從 P1S 環境出來的第一個測試版，README 為德文。
 
