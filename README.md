@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-191-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-195-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--10-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,29 +28,28 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-03 and 2026-11-09 (derived from git history).
+Added between 2026-11-04 and 2026-11-10 (derived from git history).
 
-- **[bambu-harness](https://github.com/Halfypoo/bambu-harness)** — Zero-dependency Node.js CLI that drives an A1 mini over LAN Only and Developer Mode: slice with OrcaSlicer, then upload and print over FTPS and MQTT, with JSON output for scripts. _(LAN mode, APIs & libraries)_
+- **[Thicket](https://github.com/elitk1919/Thicket)** — Single-file Python CLI that discovers Bambu Lab printers (X1C, P1P, A1) on the local network, shows status, follows a print until it finishes, and uploads a sliced file to start, pause, resume or stop it, with no cloud account; print control needs LAN Only mode with Developer Mode. _(LAN mode, APIs & libraries)_
+- **[X2D mixed nozzle sizes](https://github.com/sebo2000/x2d-mixed-nozzle)** — Unofficial, experimental script and small GUI that re-slices a Bambu Studio project with Bambu Studio's own CLI so an X2D can print one plate with a different nozzle size on each side (for example 0.2 mm on Main and 0.4 mm on Auxiliary). _(Slicers, profiles & G-code)_
+- **[printWatcher (BambuWatch)](https://github.com/yaturner/BambuWatch)** — Android phone app plus Wear OS watch app that shows a Bambu Lab printer's progress on a tile, a watch-face complication and an ongoing-activity icon, and mirrors alerts for finished, paused or failed prints and HMS errors; the phone bridges local MQTT, with no cloud account or third-party server. _(Dashboards, displays & apps)_
+- **[Bambu Connect CLI](https://github.com/LockeAG/bambu-connect-cli)** — Rust CLI for scripts and AI agents that discovers local printers, inspects a sliced `.gcode.3mf` and hands it to the official Bambu Connect for import, where you confirm the print; it stores no Bambu account credentials and doesn't change printer modes. _(Bridges & AI agents)_
 - **[@printhive/bambu-models](https://github.com/PrintHive/bambu-models)** — Dependency-free TypeScript table of Bambu Lab printer models and hardware, looked up by SSDP model code, serial number or MQTT printer_type, with a source and reference for every fact. _(LAN mode, APIs & libraries)_
 - **[BambuLAN](https://github.com/gonzalop/bambulan)** — Go library, CLI and real-time web dashboard for cloud-free LAN management of Bambu Lab printers (status, control, camera, FTPS files), with optional Home Assistant MQTT Discovery. _(LAN mode, APIs & libraries)_
 - **[beambam](https://github.com/tribixbite/beambam)** — Pure-Python LAN-first stack that bridges signed MQTT for newer Bambu firmware (X2D / H2D / P2S and Jan-2025+), with a daemon, web UI, Home Assistant discovery, MCP tools and Prometheus metrics; no live cloud dependency. _(LAN mode, APIs & libraries)_
 - **[bambu-moonraker-shim (Shambu)](https://github.com/justinh-rahb/bambu-moonraker-shim)** — Experimental LAN bridge that presents a Bambu Lab printer as a Moonraker API so Mainsail or Fluidd can talk to it over MQTT and FTPS, without installing Klipper; developed against a P1S. _(LAN mode, APIs & libraries)_
+
+<details>
+<summary>39 more added this week</summary>
+
 - **[bambu-lan-bridge](https://github.com/ddr56/bambu-lan-bridge)** — LAN-only Docker proxy that presents each printer as a virtual LAN-mode device and signs privileged commands with a Bambu Studio app certificate you supply, so a cloud-bound printer accepts clients like Bambu Studio, OrcaSlicer, Bambuddy or Home Assistant without Developer Mode; no Bambu account. _(LAN mode, APIs & libraries)_
 - **[bambu-swift](https://github.com/troglodisme/bambu-swift)** — Dependency-free Swift package that reads a printer's live status over local MQTT (job, progress, layers, temperatures, fans, filament, errors), with a small example Mac app; status only, sends no commands. _(LAN mode, APIs & libraries)_
 - **[mqtt_purifier](https://github.com/3dfarmers/mqtt_purifier)** — ESP32 firmware that watches a Bambu Lab printer over local MQTT and turns a Xiaomi air purifier on for ABS / ASA prints, then off after the job ends; no cloud or Home Assistant. _(Home Assistant & automation)_
 - **[BambuDeck-HA](https://github.com/demonkazuya/BambuDeck-HA)** — Touchscreen deck for the 2.8" CYD (ESP32-2432S028R) that shows and controls Bambu printers through Home Assistant and ha-bambulab instead of the printer's MQTT: telemetry, cover thumbnail, AMS slots and HMS error dialogs, with web OTA. _(Home Assistant & automation)_
-
-<details>
-<summary>40 more added this week</summary>
-
 - **[Bambu Printer Card](https://github.com/ossilampe/bambu-printer-card)** — Home Assistant card for ha-bambulab that draws the printer and up to four AMS units as one picture with live values inside, spools in their real colours, and a details view with pause / resume / stop, light and camera; English and German. _(Home Assistant & automation)_
 - **[ioBroker.bambulab](https://github.com/DrozmotiX/ioBroker.bambulab)** — ioBroker adapter that connects Bambu Lab printers locally with the printer's IP, access code and serial number, with no cloud involved. _(Home Assistant & automation)_
-- **[P1S Pen Plotter](https://github.com/gtls64/p1s-pen-plotter)** — Turns a P1S into a pen plotter: arrange SVGs on the bed and export a .gcode.3mf to print from Bambu Studio, with pen-swap pauses per colour; work in progress, tested on one printer. _(Firmware & hardware mods)_
-- **[BambuScribe Write](https://github.com/ICEIU-I/BambuScribe-Write)** — Desktop app that lays out text, formulas, tables and images as handwriting for an A1 with a pen, generates the G-code and uploads it over LAN; README in Chinese. _(Firmware & hardware mods)_
 - **[A1 Mini Pen Plotter](https://github.com/Hansolox80/a1-mini-pen-plotter)** — Cross-platform desktop app that converts SVGs into optimized G-code for pen plotting on a Bambu Lab A1 Mini. _(Firmware & hardware mods)_
 - **[BMCU A1 Lite](https://github.com/kolengri/bmcu-a1-lite)** — Experimental BMCU 370C firmware that implements the AMS Lite protocol for an A1 on firmware 01.08.01.00 with stock Bambu Studio; one two-color print reported on the developer's board so far. _(Firmware & hardware mods)_
-- **[obs-bambustudio](https://github.com/ciroiriarte/obs-bambustudio)** — Unofficial native Bambu Studio packages for openSUSE and other Linux distributions, built from upstream source on the openSUSE Build Service and rebuilt automatically on new releases. _(Slicers, profiles & G-code)_
-- **[3MF Colour Converter](https://github.com/haglundmorten-code/3mf-colour-converter)** — Browser tool that moves painted multi-colour projects between Bambu Studio / OrcaSlicer and PrusaSlicer without repainting, keeping parts and modifiers; files never leave the browser. _(Slicers, profiles & G-code)_
 - **[OrcaSlicer Nonplanar](https://github.com/fich-l/orcaslicer-nonplanar)** — Test release of OrcaSlicer 2.4.2 with nonplanar top surfaces on gently sloped tops (up to 12°), checked against a hotend model; community tests list A1, A1 mini, P1S, P2S, X1C, X2D and H2D as working. Official build is macOS on Apple Silicon only. _(Slicers, profiles & G-code)_
 - **[slicer-engine-wasm](https://github.com/perierhq/slicer-engine-wasm)** — Build recipe and patches that compile Bambu Studio's slicing engine (without the GUI) to WebAssembly so it can slice a 3MF offline on a phone or under Node; releases ship engine.wasm with checksums. AGPL-3.0, not affiliated with Bambu Lab. _(Slicers, profiles & G-code)_
 - **[bambu-auto-wipe](https://github.com/langkuo/bambu-auto-wipe)** — Bambu Studio post-processing script that adds nozzle wipes by accumulated extrusion length, only during infill moves, with presets for H2D, A1 / A1 mini, P1P / P1S and X1 / X1C. _(Slicers, profiles & G-code)_
@@ -64,7 +63,6 @@ Added between 2026-11-03 and 2026-11-09 (derived from git history).
 - **[Print Handy](https://github.com/catduckgnaf/print-handy)** — Local-first companion that takes a model link from Discord, Telegram or Matrix, slices it, matches spools, asks before printing and watches the camera for spaghetti on Bambu and other printers. _(Print farms & queues)_
 - **[ODIN](https://github.com/HughKantsime/runsodin)** — Self-hosted 3D print farm manager (MES / SCADA style) for Bambu Lab, Klipper, Prusa and Elegoo, with no cloud required. _(Print farms & queues)_
 - **[PrintFarm Assistant](https://github.com/Bronove/printfarm-assistant)** — Unofficial Windows desktop workbench for farms using Bambu Studio: batch import, settings changes, slicing, plate arrangement and output checks in one local workspace; base code is MIT, some optimisation components are closed source; README in Chinese. _(Print farms & queues)_
-- **[Bambu Lab to Spoolman Bridge](https://github.com/andreas-fe/bambu-spoolman-plus)** — Docker service that books filament use from A1, P1 and X1 printers into Spoolman over LAN, reading per-slot grams from the sliced file over FTPS and the active tray over MQTT; README in German. _(Filament, AMS & RFID)_
 - **[Bambu AMS RFID Filament Tracker](https://github.com/Aleitao2/bambu-ams-rfid)** — ESP32 firmware and Home Assistant automations for a P1S + AMS with third-party spools: reads NFC stickers through the AMS's own RFID board over SPI (plus a PN532), looks the tag up in Spoolman and assigns the spool to the tray in Bambuddy. _(Filament, AMS & RFID)_
 - **[FilMaNH](https://github.com/NikolausH76/FilMaNH)** — Local filament and spool manager for Bambu Lab printers on macOS, Windows and Android: follows the printers on your home network and books each print's usage and cost, without cloud or printer settings changes; README in German with an English version. _(Filament, AMS & RFID)_
 - **[3MF Katalog Manager](https://github.com/Bexxs75/3mf-katalog-manager)** — Local desktop app to catalog 3MF / STL / STEP / OBJ models and manage filament spools and AMS slots on Linux, Windows and macOS; English, German, Spanish and French. _(Filament, AMS & RFID)_
@@ -154,6 +152,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[bambu-moonraker-shim (Shambu)](https://github.com/justinh-rahb/bambu-moonraker-shim)** — Experimental LAN bridge that presents a Bambu Lab printer as a Moonraker API so Mainsail or Fluidd can talk to it over MQTT and FTPS, without installing Klipper; developed against a P1S.
 - **[bambu-lan-bridge](https://github.com/ddr56/bambu-lan-bridge)** — LAN-only Docker proxy that presents each printer as a virtual LAN-mode device and signs privileged commands with a Bambu Studio app certificate you supply, so a cloud-bound printer accepts clients like Bambu Studio, OrcaSlicer, Bambuddy or Home Assistant without Developer Mode; no Bambu account.
 - **[bambu-swift](https://github.com/troglodisme/bambu-swift)** — Dependency-free Swift package that reads a printer's live status over local MQTT (job, progress, layers, temperatures, fans, filament, errors), with a small example Mac app; status only, sends no commands.
+- **[Thicket](https://github.com/elitk1919/Thicket)** — Single-file Python CLI that discovers Bambu Lab printers (X1C, P1P, A1) on the local network, shows status, follows a print until it finishes, and uploads a sliced file to start, pause, resume or stop it, with no cloud account; print control needs LAN Only mode with Developer Mode.
 
 ## Home Assistant & automation
 
@@ -233,6 +232,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[Slicer Router](https://github.com/PrintHive/slicer-router)** — Rust library, CLI and Tauri app for macOS and Windows that opens each .3mf in the slicer that made it (Bambu Studio, OrcaSlicer, Snapmaker Orca or PrusaSlicer) by reading its metadata.
 - **[U1 Converter](https://github.com/kitkat0981/u1-converter)** — In-browser converter for Bambu Studio filament presets and .3mf projects so they work in Snapmaker Orca for the Snapmaker U1; files are not uploaded, and it self-hosts with Docker.
 - **[VertexSlicer](https://github.com/cybertech99/VertexSlicer)** — Rust mixed-layer-height slicer for the H2D (separate heights for walls and infill, plus per-zone settings) that reads your Bambu Studio profiles and writes a .gcode.3mf Bambu Studio can preview and send.
+- **[X2D mixed nozzle sizes](https://github.com/sebo2000/x2d-mixed-nozzle)** — Unofficial, experimental script and small GUI that re-slices a Bambu Studio project with Bambu Studio's own CLI so an X2D can print one plate with a different nozzle size on each side (for example 0.2 mm on Main and 0.4 mm on Auxiliary).
 
 ## Print farms & queues
 
@@ -326,6 +326,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[BambuMonitor](https://github.com/ou0826/bambu-monitor)** — Windows desktop monitor that pops up alerts for finished, failed or paused prints, filament changes and HMS faults, over a direct LAN connection or through Bambu Cloud; README in Chinese, English version included.
 - **[Bambu 3DPrint Dashboard for eWeLink CUBE](https://github.com/freezingzz/ewelink-cube-addon-bambu-3dprint-dashboard)** — Read-only eWeLink CUBE add-on that pulls printer status, AMS materials and job covers from Bambu Cloud and shows them on CUBE cards and CAST screens; currently focused on one H2C, English and Chinese UI.
 - **[SDGoods Bambu Monitor](https://github.com/YeatsLiao/sdgoods-bambu-monitor)** — ESP-IDF firmware for the SDGoods ESP32-S3 round-screen device that shows a printer's progress, time left, temperatures and filament over the LAN, with 18 switchable skins; README in Chinese.
+- **[printWatcher (BambuWatch)](https://github.com/yaturner/BambuWatch)** — Android phone app plus Wear OS watch app that shows a Bambu Lab printer's progress on a tile, a watch-face complication and an ongoing-activity icon, and mirrors alerts for finished, paused or failed prints and HMS errors; the phone bridges local MQTT, with no cloud account or third-party server.
 
 ## Bridges & AI agents
 
@@ -342,6 +343,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[Bambu Lab printer pane for Claude Code](https://github.com/artemnovichkov/claude-code-bambu-lab)** — Unofficial Claude Code plugin that shows a Bambu printer beside the chat: print settings, progress, temperatures, AMS spools, HMS errors and the plate thumbnail, with light, pause, resume, stop and skip-object buttons; status comes from Bambu's cloud, macOS only.
 - **[Bambu Studio Advisor MCP](https://github.com/JohanRouyer/BambuStudio-Advisor-MCP)** — Local MCP server that lets Claude analyze an STL or 3MF, slice several variants with the Bambu Studio engine, compare time and weight, and hand back a ready .3mf project.
 - **[Slicewise](https://github.com/gjlmotea/slicewise-mcp)** — MCP server for Bambu Studio presets and slicing: flattens preset inheritance so CLI slicing matches the GUI, audits which overrides took effect, and checks printability before slicing; does not control printers.
+- **[Bambu Connect CLI](https://github.com/LockeAG/bambu-connect-cli)** — Rust CLI for scripts and AI agents that discovers local printers, inspects a sliced `.gcode.3mf` and hands it to the official Bambu Connect for import, where you confirm the print; it stores no Bambu account credentials and doesn't change printer modes.
 
 ## Closed-source / commercial (for reference)
 
