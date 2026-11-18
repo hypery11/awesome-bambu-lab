@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-213-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--17-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-219-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -28,31 +28,34 @@ The projects people actually share. Everything below is the map around them, not
 
 ## New this week
 
-Added between 2026-11-11 and 2026-11-17 (derived from git history).
+Added between 2026-11-12 and 2026-11-18 (derived from git history).
 
 - **[bambu-lan-connector](https://github.com/FreitasCSpace/bambu-lan-connector)** — Open-source native aarch64 replacement for Bambu Studio's closed networking and camera plugins, so the Studio flatpak on ARM64 Linux can connect to printers, send prints and show the live camera in LAN mode. _(LAN mode, APIs & libraries)_
 - **[bambu-lan](https://github.com/canndurmaz/bambu-lan)** — Pure-Python server and CLI that keep a Bambu printer completely offline while you watch and control it from anywhere over Tailscale: web dashboard with live camera, print control, file upload with AMS mapping, temperatures, fans and AMS status; built for the X2D, with per-model profiles for 15 Bambu printers. _(LAN mode, APIs & libraries)_
-- **[Bambulab2Lox](https://github.com/ricten/Bambulab2Lox)** — LoxBerry plugin that reads Bambu Lab printers over their local MQTT broker and republishes state, progress, temperatures, AMS and errors to Loxone, with optional locked-by-default commands (light, pause, resume, speed, stop); no cloud, beta tested on an H2C, README in German. _(Home Assistant & automation)_
 - **[AMS Graphic Card](https://github.com/spikekai/ha-ams-graphic-card)** — Home Assistant Lovelace card for the `bambu_lab` integration that draws every AMS slot as a real spool (colour, remaining filament, multi-colour segments) and highlights the tool head that is feeding; supports AMS, AMS 2 PRO, AMS HT and AMS-3H, with the model detected from device metadata. _(Home Assistant & automation)_
 - **[BambuDiscordStatus](https://github.com/kmoeta/BambuDiscordStatus)** — Vencord userplugin that shows a Bambu Lab printer as Discord Rich Presence, pulled live from Home Assistant (ha-bambulab) over WebSocket: print name, progress, layer, filament and time left, plus finish and failure notifications; no separate script on the PC. _(Home Assistant & automation)_
 - **[Filament Stock](https://github.com/matata86/filament-stock)** — HACS integration that keeps a filament stock in grams for Bambu printers in Home Assistant, deducting what each AMS slot used per print via ha-bambulab, with items from your Bambu filament profiles, barcode scanning and a dashboard card. _(Home Assistant & automation)_
 - **[bambu-print-guard](https://github.com/noskillor/bambu-print-guard)** — Local, free AI failure detection for Bambu printers in LAN-only + Developer mode via Home Assistant (ha-bambulab): watches the camera with the open-source Obico model for spaghetti, detached parts and blobs, and sends a push notification with an annotated photo, the layer and Z height where the failure started, the last good layer, and Pause / Resume buttons; no cloud, subscription or GPU. _(Home Assistant & automation)_
-- **[A1 hotend sensor board RE](https://github.com/rjacobs1969/bambulab_a1_filament_sensor)** — Reverse-engineering notes for the Bambu Lab A1 hotend sensor board: the 8-pin flat cable pinout, schematic, three Hall-effect sensors (filament presence, cutter position, tangling), measured voltages and an EBB42 adapter board. _(Firmware & hardware mods)_
 - **[Panda State](https://github.com/ImSammyTTV/Panda-State)** — Open replacement firmware for BIQU's ESP32-C3 Panda light boards (Panda Status P2 for P2S/X2D and others) with extra effects, Home Assistant over MQTT and an open HTTP API. _(Firmware & hardware mods)_
-
-<details>
-<summary>10 more added this week</summary>
-
 - **[Bambu Filament Library for Fusion](https://github.com/mtenemy2/fusion-bambu-filament-library)** — Autodesk Fusion script that adds every Bambu Lab filament color as an appearance and each product line as a physical material from Bambu's technical data sheets, updating from Bambu's official color table. _(Slicers, profiles & G-code)_
 - **[bambu-filament-profiles](https://github.com/skornehl/bambu-filament-profiles)** — Tool that builds Bambu Studio filament profiles sorted by brand (instead of everything under "Generic") from open filament databases fetched on your computer, and installs them into a local Bambu Studio (Linux, Flatpak, Windows, macOS), with a local companion app to search and install; targets the P1S with a 0.4 mm nozzle. _(Slicers, profiles & G-code)_
+
+<details>
+<summary>13 more added this week</summary>
+
 - **[PF PrintFloor](https://github.com/pomeroyfamily/pf-printfloor)** — Self-hosted, status-only web dashboard for a mixed printer fleet (Bambu Lab, Snapmaker U1 / Klipper and Elegoo Centauri Carbon) on one page; it never starts, pauses or changes prints, only smart plugs and camera streams. Early release. _(Print farms & queues)_
+- **[Panda Connect](https://github.com/Skaronator/panda-connect)** — Local Bambu Lab printer driver for the self-hosted Prusa Connect server, so a mixed fleet can be managed in one place: it talks to the printer directly over MQTT/TLS in LAN-only mode with no Bambu account or cloud; H3C controls are hardware-verified, other models start as read-only monitoring. _(Print farms & queues)_
 - **[Spoolbook](https://github.com/Infraviored/spoolbook)** — Home Assistant integration that tracks every spool in a Bambu Lab AMS, including third-party spools, with an AMS overview, live per-print usage, weighing and QR labels. _(Filament, AMS & RFID)_
 - **[Bambu Filament Scanner](https://github.com/talla83/bambu-filament-scanner)** — Android app (8.0+) that reads the MIFARE Classic 1K NFC tags on original Bambu Lab spools and shows material, type, colour (with Bambu colour name), diameter, weight, length, temperatures, drying and production date, with a local scan history; read-only, needs a phone with MIFARE Classic support. README in German. _(Filament, AMS & RFID)_
-- **[MMM-BambuLab-BODK](https://github.com/BravoOscarDK/MMM-BambuLab-BODK)** — Configurable MagicMirror² module showing local Bambu Lab printer status over MQTT/TLS: job, progress, finish time, layers, temperatures, fans and AMS slots, with multiple printers; read-only, sends no control commands. _(Dashboards, displays & apps)_
+- **[simplyusage](https://github.com/wendsell/simplyusage)** — When a Bambu print sent from Bambu Studio or Orca ends, reads the real per-colour usage from the print file and deducts it from the SimplyPrint spool in each AMS slot used, filling the gap SimplyPrint leaves for prints it did not start itself. _(Filament, AMS & RFID)_
+- **[Spool Inventory](https://github.com/sfandetti/spool-inventory)** — Local app that connects to Bambu Lab printers over your network to show what is loaded in every AMS slot and how much is left on each roll, and keeps a shelf inventory: scan Bambu rolls with a Flipper Zero and sync over USB, let rolls be added as they pass through the AMS, or add other brands by hand. _(Filament, AMS & RFID)_
+- **[PrintBot camera](https://github.com/paulnorthup/ha-printbot-camera)** — Home Assistant camera for the Bambu Lab H2S that plays the printer's 1080p/30 fps live view over WebRTC through Home Assistant's built-in go2rtc, keeping a single connection to the printer so the dashboard's HLS and WebRTC players no longer knock each other over. _(Camera & timelapse)_
 - **[webhook-p2s](https://github.com/Chris-Lzy/webhook-p2s)** — Lightweight Docker service that watches Bambu Lab printers over local MQTT and pushes start, finish, failure, pause and progress events to a DingTalk group bot, with camera snapshots and a web config page; no cloud sign-up. _(Dashboards, displays & apps)_
 - **[MyBambuddy](https://github.com/Michael3DPrint/mybambuddy)** — Unofficial Android app for monitoring and controlling a Bambu Lab printer through your own self-hosted Bambuddy server over plain HTTP; a personal project written for one X2D and tested against Bambuddy 1.3.0, meant for a home network or VPN. _(Dashboards, displays & apps)_
 - **[Bambu Deck](https://github.com/web-workers-com/bambu-deck)** — LAN-only Stream Deck plugin for up to four Bambu printers showing progress, AMS spools, temperatures and controls, taking over the whole deck when a print finishes or needs attention; UI in German for now. _(Dashboards, displays & apps)_
 - **[bambu-dash](https://github.com/zwmwei/bambu-dash)** — LAN-only live dashboard for Bambu printers as a web page, Android APK or NAS Docker container: progress, temperatures with 5-minute curves, AMS trays, fans, HMS alerts, camera (RTSPS to MJPEG), chamber light and pause / resume / stop (needs Developer Mode), with printer auto-discovery; developed and tested on a P2S. README in Simplified Chinese. _(Dashboards, displays & apps)_
+- **[Pygmy](https://github.com/danderik88/pygmy)** — Self-hosted Docker app that puts LAN-only Bambu Lab and Klipper printers on your phone without the cloud: live camera, controls, notifications, spaghetti detection, one-tap printing and an MCP endpoint for agents; early preview. _(Dashboards, displays & apps)_
+- **[BambuBar for Omarchy](https://github.com/tripex/omarchy-bambubar)** — Omarchy bar widget and panel showing a Bambu Lab printer's progress, time left, temperatures (both nozzles on H2D/X2D) and every AMS with spools in their real colours and humidity, plus a notification when a print ends; started as the Omarchy version of the macOS BambuBar. _(Dashboards, displays & apps)_
 
 </details>
 
@@ -232,6 +235,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[ODIN](https://github.com/HughKantsime/runsodin)** — Self-hosted 3D print farm manager (MES / SCADA style) for Bambu Lab, Klipper, Prusa and Elegoo, with no cloud required.
 - **[PrintFarm Assistant](https://github.com/Bronove/printfarm-assistant)** — Unofficial Windows desktop workbench for farms using Bambu Studio: batch import, settings changes, slicing, plate arrangement and output checks in one local workspace; base code is MIT, some optimisation components are closed source; README in Chinese.
 - **[PF PrintFloor](https://github.com/pomeroyfamily/pf-printfloor)** — Self-hosted, status-only web dashboard for a mixed printer fleet (Bambu Lab, Snapmaker U1 / Klipper and Elegoo Centauri Carbon) on one page; it never starts, pauses or changes prints, only smart plugs and camera streams. Early release.
+- **[Panda Connect](https://github.com/Skaronator/panda-connect)** — Local Bambu Lab printer driver for the self-hosted Prusa Connect server, so a mixed fleet can be managed in one place: it talks to the printer directly over MQTT/TLS in LAN-only mode with no Bambu account or cloud; H3C controls are hardware-verified, other models start as read-only monitoring.
 
 ## Filament, AMS & RFID
 
@@ -257,6 +261,8 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[Bambu Filament Manager for Home Assistant](https://github.com/alex1255/bambu-filament-manager)** — Home Assistant integration that keeps a numbered spool inventory, assigns spools to AMS slots and deducts each finished print's per-slot usage reported by the Bambu Lab integration; first test release from a P1S setup, README in German.
 - **[Spoolbook](https://github.com/Infraviored/spoolbook)** — Home Assistant integration that tracks every spool in a Bambu Lab AMS, including third-party spools, with an AMS overview, live per-print usage, weighing and QR labels.
 - **[Bambu Filament Scanner](https://github.com/talla83/bambu-filament-scanner)** — Android app (8.0+) that reads the MIFARE Classic 1K NFC tags on original Bambu Lab spools and shows material, type, colour (with Bambu colour name), diameter, weight, length, temperatures, drying and production date, with a local scan history; read-only, needs a phone with MIFARE Classic support. README in German.
+- **[simplyusage](https://github.com/wendsell/simplyusage)** — When a Bambu print sent from Bambu Studio or Orca ends, reads the real per-colour usage from the print file and deducts it from the SimplyPrint spool in each AMS slot used, filling the gap SimplyPrint leaves for prints it did not start itself.
+- **[Spool Inventory](https://github.com/sfandetti/spool-inventory)** — Local app that connects to Bambu Lab printers over your network to show what is loaded in every AMS slot and how much is left on each roll, and keeps a shelf inventory: scan Bambu rolls with a Flipper Zero and sync over USB, let rolls be added as they pass through the AMS, or add other brands by hand.
 
 ## Camera & timelapse
 
@@ -268,6 +274,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[scrypted-bambu](https://github.com/tetra-fox/scrypted-bambu)** — Scrypted plugin that brings Bambu printer cameras (port 6000 JPEG on P1/A1, RTSP on X1/H2/P2) into HomeKit or an NVR, plus a chamber light switch.
 - **[PrintView](https://github.com/wvfouram/printview)** — Raspberry Pi 5 service for a P1S in LAN-only + Developer Mode: live camera, controls, local spaghetti detection, per-layer timelapses and an Arduino bed relay, used from a phone web app, an Android app or a public link.
 - **[Bambu X2D OBS overlay](https://github.com/chatcode-lab/bambu-overlay)** — Locally hosted, read-only OBS overlay for streaming X2D prints: progress, temperatures, plate preview, filament and AMS slots in six layouts, plus automatic camera-crop panning and an audio meter; built as a macOS app.
+- **[PrintBot camera](https://github.com/paulnorthup/ha-printbot-camera)** — Home Assistant camera for the Bambu Lab H2S that plays the printer's 1080p/30 fps live view over WebRTC through Home Assistant's built-in go2rtc, keeping a single connection to the printer so the dashboard's HLS and WebRTC players no longer knock each other over.
 
 ## Dashboards, displays & apps
 
@@ -318,6 +325,8 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[MyBambuddy](https://github.com/Michael3DPrint/mybambuddy)** — Unofficial Android app for monitoring and controlling a Bambu Lab printer through your own self-hosted Bambuddy server over plain HTTP; a personal project written for one X2D and tested against Bambuddy 1.3.0, meant for a home network or VPN.
 - **[Bambu Deck](https://github.com/web-workers-com/bambu-deck)** — LAN-only Stream Deck plugin for up to four Bambu printers showing progress, AMS spools, temperatures and controls, taking over the whole deck when a print finishes or needs attention; UI in German for now.
 - **[bambu-dash](https://github.com/zwmwei/bambu-dash)** — LAN-only live dashboard for Bambu printers as a web page, Android APK or NAS Docker container: progress, temperatures with 5-minute curves, AMS trays, fans, HMS alerts, camera (RTSPS to MJPEG), chamber light and pause / resume / stop (needs Developer Mode), with printer auto-discovery; developed and tested on a P2S. README in Simplified Chinese.
+- **[Pygmy](https://github.com/danderik88/pygmy)** — Self-hosted Docker app that puts LAN-only Bambu Lab and Klipper printers on your phone without the cloud: live camera, controls, notifications, spaghetti detection, one-tap printing and an MCP endpoint for agents; early preview.
+- **[BambuBar for Omarchy](https://github.com/tripex/omarchy-bambubar)** — Omarchy bar widget and panel showing a Bambu Lab printer's progress, time left, temperatures (both nozzles on H2D/X2D) and every AMS with spools in their real colours and humidity, plus a notification when a print ends; started as the Omarchy version of the macOS BambuBar.
 
 ## Bridges & AI agents
 
