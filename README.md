@@ -359,6 +359,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 
 - **[Bambu Handy](https://bambulab.com/en/download)** — Official mobile app.
 - **[MakerWorld](https://makerworld.com)** — Official model repository.
+- **[Printer Tools](https://printertools.app/)** — Closed-source app for monitoring Bambu Lab and other 3D printers on Apple and Android devices, with print status, live cameras and file management.
 
 ## Related lists
 

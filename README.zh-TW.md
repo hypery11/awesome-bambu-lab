@@ -359,6 +359,7 @@
 
 - **[Bambu Handy](https://bambulab.com/en/download)** — 官方手機 App。
 - **[MakerWorld](https://makerworld.com)** — 官方模型平台。
+- **[Printer Tools](https://printertools.app/)** — 適用於 Apple 與 Android 裝置的閉源 App，可監看 Bambu Lab 及其他品牌 3D 印表機的列印狀態、即時攝影機畫面並管理檔案。
 
 ## 相關列表
 
