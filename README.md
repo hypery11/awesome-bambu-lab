@@ -297,6 +297,7 @@ Whether a tool talks to the printer on your local network or through Bambu Cloud
 - **[PrintView](https://github.com/wvfouram/printview)** — Raspberry Pi 5 service for a P1S in LAN-only + Developer Mode: live camera, controls, local spaghetti detection, per-layer timelapses and an Arduino bed relay, used from a phone web app, an Android app or a public link.
 - **[Bambu X2D OBS overlay](https://github.com/chatcode-lab/bambu-overlay)** — Locally hosted, read-only OBS overlay for streaming X2D prints: progress, temperatures, plate preview, filament and AMS slots in six layouts, plus automatic camera-crop panning and an audio meter; built as a macOS app.
 - **[PrintBot camera](https://github.com/paulnorthup/ha-printbot-camera)** — Home Assistant camera for the Bambu Lab H2S that plays the printer's 1080p/30 fps live view over WebRTC through Home Assistant's built-in go2rtc, keeping a single connection to the printer so the dashboard's HLS and WebRTC players no longer knock each other over.
+- **[Obico failure detection (ml_api)](https://github.com/TheSpaghettiDetective/obico-server/tree/release/ml_api)** — The open-source failure-detection server from obico-server, run as one Docker container: send it the address of a camera snapshot over HTTP and it returns where it sees spaghetti, blobs or detached parts. Images for 64-bit x86 and ARM CPUs, NVIDIA GPUs and Jetson; needs no account or internet connection once running. Bambuddy, bambu-print-guard, Pygmy and ha-bambu-lab-p1-spaghetti-detection use this model.
 
 ## Dashboards, displays & apps
 
