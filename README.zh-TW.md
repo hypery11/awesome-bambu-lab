@@ -297,7 +297,7 @@
 - **[PrintView](https://github.com/wvfouram/printview)** — 給 LAN-only + 開發者模式 P1S 用的 Raspberry Pi 5 服務：即時鏡頭、控制、本機炒麵偵測、逐層縮時與 Arduino 熱床繼電器，可從手機網頁 App、Android App 或公開連結操作。
 - **[Bambu X2D OBS overlay](https://github.com/chatcode-lab/bambu-overlay)** — 本機架設、唯讀的 OBS 疊加層，用於直播 X2D 列印：以六種版面顯示進度、溫度、盤面預覽、線材與 AMS 槽位，另能自動平移鏡頭裁切並顯示音量表；打包成 macOS App。
 - **[PrintBot camera](https://github.com/paulnorthup/ha-printbot-camera)** — 給 Bambu Lab H2S 用的 Home Assistant 鏡頭，透過 Home Assistant 內建的 go2rtc 以 WebRTC 播放印表機 1080p/30 fps 即時畫面，只對印表機保持一條連線，避免儀表板的 HLS 與 WebRTC 播放器互相干擾而卡頓。
-- **[Obico failure detection (ml_api)](https://github.com/TheSpaghettiDetective/obico-server/tree/release/ml_api)** — obico-server 的開源列印失敗偵測伺服器，以單一 Docker 容器執行：透過 HTTP 傳入鏡頭快照的網址，就會回傳畫面中義大利麵、結塊或零件脫落的位置。提供 64 位元 x86 與 ARM CPU、NVIDIA GPU 及 Jetson 的映像檔；執行後不需要帳號或網路連線。Bambuddy、bambu-print-guard、Pygmy 與 ha-bambu-lab-p1-spaghetti-detection 都使用這個模型。
+- **[Obico failure detection (ml_api)](https://github.com/TheSpaghettiDetective/obico-server/tree/master/ml_api)** — obico-server 的開源列印失敗偵測伺服器，以單一 Docker 容器執行：透過 HTTP 傳入鏡頭快照的網址，就會回傳畫面中義大利麵、結塊或零件脫落的位置。提供 64 位元 x86 與 ARM CPU、NVIDIA GPU 及 Jetson 的映像檔；執行後不需要帳號或網路連線。Bambuddy、bambu-print-guard、Pygmy 與 ha-bambu-lab-p1-spaghetti-detection 都使用這個模型。
 
 ## 儀表板、螢幕與 App
 
