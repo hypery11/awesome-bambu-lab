@@ -44,7 +44,7 @@
 <details>
 <summary>本週另外新增 23 條</summary>
 
-- **[BatchSlicer](https://github.com/drak42/batch_slicer)** — Linux 命令列工具（`pipx install batchslicer`），用 Bambu Studio、OrcaSlicer 或 Creality Print 自己的命令列與你已設定好的印表機、線材與製程預設，切片單一模型或整個資料夾：把套件零件排到列印板上、複製多份、填好多色 3MF 的每個線材槽、在 G-code 裡加入預覽圖，並支援監看資料夾；直接傳送只支援 Klipper 與 OctoPrint，不支援 Bambu 印表機。 _(切片、設定檔與 G-code)_
+- **[BatchSlicer](https://github.com/drak42/batch_slicer)** — 支援 Linux、Windows 與 macOS 的命令列工具（`pipx install batchslicer`），用 Bambu Studio、OrcaSlicer 或 Creality Print 自己的命令列與你已設定好的印表機、線材與製程預設，切片單一模型或整個資料夾：把套件零件排到列印板上、複製多份、填好多色 3MF 的每個線材槽、在 G-code 裡加入預覽圖，並支援可作為背景服務執行的監看資料夾；直接傳送只支援 Klipper 與 OctoPrint，不支援 Bambu 印表機。 _(切片、設定檔與 G-code)_
 - **[EmberCheck](https://github.com/drewrobinso/embercheck)** — 在本機執行、類似 Helio 的 Bambu Studio G-code 後處理工具：逐層熱檢查並產生 HTML 熱度圖報告，再把過熱的層放慢、把較冷的層的內牆與填充加速，修正懸垂與橋接的風扇設定、找出缺少的回抽，並重排空跑路徑；提供 Windows 安裝程式，macOS 與其他系統有預覽版 Python 版本。 _(切片、設定檔與 G-code)_
 - **[Panda Connect](https://github.com/Skaronator/panda-connect)** — 給自架 Prusa Connect 伺服器用的本機 Bambu Lab 印表機驅動，讓混合機隊能在同一處管理：在區網模式下直接透過 MQTT/TLS 與印表機連線，不需要 Bambu 帳號或雲端；H3C 的控制功能已經實機驗證，其他機型先以唯讀監控啟用。 _(列印農場與佇列)_
 - **[printfarm-planner](https://github.com/projectbin07-stack/printfarm-planner)** — 為混合印表機群（Bambu Lab P1S、A1、A1 Mini 或自訂機型）規劃生產排程，考量操作人員在場時段、AMS、材料與噴嘴限制，輸出排程、稼動率數據與可在瀏覽器開啟的甘特圖。 _(列印農場與佇列)_
@@ -240,7 +240,7 @@
 - **[MakerWorld Settings Importer for OrcaSlicer](https://github.com/FleeceFlames/Orca_makerworld_importer)** — OrcaSlicer 2.5 以上的 Python 外掛，把 MakerWorld 的 `.3mf`（通常為拓竹印表機切好）轉換到你目前使用的印表機：只把原作者相容的列印參數疊加到你自己的印表機、列印板與線材預設上，並輸出變更紀錄。
 - **[bambu-slice-mcp](https://github.com/ZHT0711/bambu-slice-mcp)** — MCP 伺服器，透過命令列無頭執行 Bambu Studio／OrcaSlicer 自己的切片引擎，並可對某個參數（層高、支撐閾值、填充…）連續掃描數組，回報每組實測的列印時間與耗材用量；也會攤平命令列不會處理的預設繼承鏈。
 - **[NoCali](https://github.com/HanSur94/nocali)** — 給 X1 Carbon／X1 用的小型本機網頁：從切好的檔案移除震動（共振）校正，把處理後的檔案交給 Bambu Connect 開印，並即時顯示印表機狀態（進度、溫度、風扇、AMS 線材、以白話呈現的 HMS 錯誤、鏡頭）；印表機維持一般雲端模式。
-- **[BatchSlicer](https://github.com/drak42/batch_slicer)** — Linux 命令列工具（`pipx install batchslicer`），用 Bambu Studio、OrcaSlicer 或 Creality Print 自己的命令列與你已設定好的印表機、線材與製程預設，切片單一模型或整個資料夾：把套件零件排到列印板上、複製多份、填好多色 3MF 的每個線材槽、在 G-code 裡加入預覽圖，並支援監看資料夾；直接傳送只支援 Klipper 與 OctoPrint，不支援 Bambu 印表機。
+- **[BatchSlicer](https://github.com/drak42/batch_slicer)** — 支援 Linux、Windows 與 macOS 的命令列工具（`pipx install batchslicer`），用 Bambu Studio、OrcaSlicer 或 Creality Print 自己的命令列與你已設定好的印表機、線材與製程預設，切片單一模型或整個資料夾：把套件零件排到列印板上、複製多份、填好多色 3MF 的每個線材槽、在 G-code 裡加入預覽圖，並支援可作為背景服務執行的監看資料夾；直接傳送只支援 Klipper 與 OctoPrint，不支援 Bambu 印表機。
 - **[EmberCheck](https://github.com/drewrobinso/embercheck)** — 在本機執行、類似 Helio 的 Bambu Studio G-code 後處理工具：逐層熱檢查並產生 HTML 熱度圖報告，再把過熱的層放慢、把較冷的層的內牆與填充加速，修正懸垂與橋接的風扇設定、找出缺少的回抽，並重排空跑路徑；提供 Windows 安裝程式，macOS 與其他系統有預覽版 Python 版本。
 
 ## 列印農場與佇列
