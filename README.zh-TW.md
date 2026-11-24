@@ -2,7 +2,7 @@
 
 ![Awesome Bambu Lab](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-237-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-244-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-bambu-lab/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-bambu-lab/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -28,41 +28,43 @@
 
 ## 本週新增
 
-2026-11-17 至 2026-11-23 新增的條目（依 git 紀錄整理）。
+2026-11-18 至 2026-11-24 新增的條目（依 git 紀錄整理）。
 
-- **[bambu-lan](https://github.com/canndurmaz/bambu-lan)** — 純 Python 的伺服器與命令列工具，讓拓竹印表機完全離線，同時透過 Tailscale 從任何地方監看與控制：網頁儀表板含即時鏡頭、列印控制、可對應 AMS 的檔案上傳、溫度、風扇與 AMS 狀態；為 X2D 打造，另有 15 款拓竹印表機的機型設定檔。 _(區網模式、API 與函式庫)_
 - **[Bambu Controller](https://github.com/mrquentin/bambu-controller)** — 小型自架網頁 App，以本機帳號在 LAN-only 模式下監看與控制 Bambu Lab 印表機：SSDP 探索、即時鏡頭（JPEG 或透過 ffmpeg 的 RTSPS）、溫度、風扇、燈光、速度檔位、軸移動與暫停／繼續／停止、AMS 進退料、HMS 警示、可從 `.3mf` 直接開印的 FTPS 檔案瀏覽器，以及 G-code 主控台；協定說明由 LanBu Android App 逆向整理而來。 _(區網模式、API 與函式庫)_
 - **[bambu-lan-plugin-aarch64](https://github.com/cyrinux/bambu-lan-plugin-aarch64)** — 非官方的開源原生 aarch64 實作，重寫 Bambu 閉源且只有 x86-64 版的網路外掛（`libbambu_networking.so`、`libBambuSource.so`）中的區網部分，讓 arm64 Linux 上的 Bambu Studio 與 OrcaSlicer 能使用印表機探索、裝置分頁、區網列印與即時鏡頭；印表機需為 LAN-only 模式並開啟開發者模式，目前只在 A1 上實測過。 _(區網模式、API 與函式庫)_
 - **[Orcbro](https://github.com/blankkit/orcbro)** — 自架的容器，透過簡單的 HTTPS/JSON API 把區網模式的 Bambu Lab 印表機橋接到 iOS App Bambro：經 MQTT 讀取狀態與控制、用 OrcaSlicer 命令列與官方 Bambu 設定檔切片 STL、OBJ、STEP 與 3MF，以及送出列印，不需 Bambu 雲端帳號。 _(區網模式、API 與函式庫)_
-- **[bambu-print-guard](https://github.com/noskillor/bambu-print-guard)** — 透過 Home Assistant（ha-bambulab）為 LAN-only + 開發者模式的拓竹印表機做本機、免費的 AI 失敗偵測：用開源 Obico 模型盯著鏡頭找炒麵、脫落與結塊，並推播附標註照片、失敗起始層與 Z 高度、最後完好層，以及暫停／繼續按鈕的通知；不需雲端、訂閱或 GPU。 _(Home Assistant 與自動化)_
+- **[null-bambu-cli](https://github.com/GOROman/null-bambu-cli)** — 給*未*開啟 LAN Only Mode 的 Bambu Lab 印表機用的 Python 命令列工具（`nbc`）：以 SSDP 探索印表機並釘選憑證指紋，透過區網 MQTT 讀取狀態與 AMS／料架線材，並經區網列出、上傳或刪除內部或外部儲存空間上的切片檔。 _(區網模式、API 與函式庫)_
 - **[Bambu Lab Cards (CzechTropi)](https://github.com/CzechTropi/bambulab-card)** — 建立在 ha-bambulab 之上的三張極簡 HACS 儀表板卡片：印表機卡（鏡頭、進度、溫度、錯誤）、仿 Bambu Studio 風格的 AMS 卡，以及外掛線軸卡，全部可在視覺化編輯器設定，並提供模擬資料來源，沒有印表機也能試用。 _(Home Assistant 與自動化)_
 - **[Bambu Filament Manager (Trunks1982)](https://github.com/Trunks1982/ha-bambu-filament-manager)** — 在 Home Assistant 裡管理 Bambu 印表機線材庫存的 HACS 整合，底層使用 ha-bambulab：仿 Bambu Studio 風格的 AMS 卡片、可一鍵載入槽位的 NFC 貼紙、即時用量追蹤、AMS 烘乾與濕度警示、每次列印成本與通知；要把設定送到 AMS 需使用區網模式並開啟開發者模式。 _(Home Assistant 與自動化)_
 - **[BamButton-IDF](https://github.com/FLsmaier/BamButton-IDF)** — Bambutton 的純 ESP-IDF 移植版，用於 ESP32-C3 Super Mini：實體按鈕會輪詢 Bambuddy，在印表機等待清空列印板時閃爍 LED，按下後透過 Bambuddy API 送出清板確認；透過板子自己的熱點進行設定。 _(韌體與硬體改裝)_
-- **[bambu-filament-profiles](https://github.com/skornehl/bambu-filament-profiles)** — 從開放線材資料庫（在你的電腦上抓取最新版）產生依品牌分類的 Bambu Studio 線材設定檔（而不是全部擠在「Generic」底下），並安裝到本機 Bambu Studio（Linux、Flatpak、Windows、macOS），附可搜尋與安裝的本機輔助 App；目標機型為 P1S 搭 0.4 mm 噴嘴。 _(切片、設定檔與 G-code)_
 - **[MakerWorld Settings Importer for OrcaSlicer](https://github.com/FleeceFlames/Orca_makerworld_importer)** — OrcaSlicer 2.5 以上的 Python 外掛，把 MakerWorld 的 `.3mf`（通常為拓竹印表機切好）轉換到你目前使用的印表機：只把原作者相容的列印參數疊加到你自己的印表機、列印板與線材預設上，並輸出變更紀錄。 _(切片、設定檔與 G-code)_
-
-<details>
-<summary>本週另外新增 19 條</summary>
-
 - **[bambu-slice-mcp](https://github.com/ZHT0711/bambu-slice-mcp)** — MCP 伺服器，透過命令列無頭執行 Bambu Studio／OrcaSlicer 自己的切片引擎，並可對某個參數（層高、支撐閾值、填充…）連續掃描數組，回報每組實測的列印時間與耗材用量；也會攤平命令列不會處理的預設繼承鏈。 _(切片、設定檔與 G-code)_
 - **[NoCali](https://github.com/HanSur94/nocali)** — 給 X1 Carbon／X1 用的小型本機網頁：從切好的檔案移除震動（共振）校正，把處理後的檔案交給 Bambu Connect 開印，並即時顯示印表機狀態（進度、溫度、風扇、AMS 線材、以白話呈現的 HMS 錯誤、鏡頭）；印表機維持一般雲端模式。 _(切片、設定檔與 G-code)_
+
+<details>
+<summary>本週另外新增 21 條</summary>
+
+- **[BatchSlicer](https://github.com/drak42/batch_slicer)** — Linux 命令列工具（`pipx install batchslicer`），用 Bambu Studio、OrcaSlicer 或 Creality Print 自己的命令列與你已設定好的印表機、線材與製程預設，切片單一模型或整個資料夾：把套件零件排到列印板上、複製多份、填好多色 3MF 的每個線材槽、在 G-code 裡加入預覽圖，並支援監看資料夾；直接傳送只支援 Klipper 與 OctoPrint，不支援 Bambu 印表機。 _(切片、設定檔與 G-code)_
+- **[EmberCheck](https://github.com/drewrobinso/embercheck)** — 在本機執行、類似 Helio 的 Bambu Studio G-code 後處理工具：逐層熱檢查並產生 HTML 熱度圖報告，再把過熱的層放慢、把較冷的層的內牆與填充加速，修正懸垂與橋接的風扇設定、找出缺少的回抽，並重排空跑路徑；提供 Windows 安裝程式，macOS 與其他系統有預覽版 Python 版本。 _(切片、設定檔與 G-code)_
 - **[Panda Connect](https://github.com/Skaronator/panda-connect)** — 給自架 Prusa Connect 伺服器用的本機 Bambu Lab 印表機驅動，讓混合機隊能在同一處管理：在區網模式下直接透過 MQTT/TLS 與印表機連線，不需要 Bambu 帳號或雲端；H3C 的控制功能已經實機驗證，其他機型先以唯讀監控啟用。 _(列印農場與佇列)_
 - **[printfarm-planner](https://github.com/projectbin07-stack/printfarm-planner)** — 為混合印表機群（Bambu Lab P1S、A1、A1 Mini 或自訂機型）規劃生產排程，考量操作人員在場時段、AMS、材料與噴嘴限制，輸出排程、稼動率數據與可在瀏覽器開啟的甘特圖。 _(列印農場與佇列)_
 - **[InvenTree Bambuddy](https://github.com/nemccarthy/inventree-bambuddy)** — 透過 Bambuddy 列印零件的 InvenTree 外掛：把零件連到切片檔，按下 Print 即建立製造工單並把列印板排入 Bambuddy 佇列（暫不開印），印完後把良品入庫；也可在庫存低於下限時自動排印。 _(列印農場與佇列)_
 - **[bambu-autoeject](https://github.com/bullsrobo-boop/bambu-autoeject)** — 把多個切好的列印板合併成一個 Bambu Lab A1 任務：每印完一件就讓熱床降溫、用噴頭把零件從前方推下，再開始下一件，不需額外硬體或改韌體；目前為 alpha 版，尚未在實機上測試。 _(列印農場與佇列)_
-- **[Bambu Filament Scanner](https://github.com/talla83/bambu-filament-scanner)** — Android App（8.0 以上），讀取原廠拓竹線材盤上的 MIFARE Classic 1K NFC 標籤，顯示材料、類型、顏色（含拓竹色名）、線徑、重量、長度、溫度、烘乾與生產日期，並在本機保存掃描紀錄；只讀不寫，手機需支援 MIFARE Classic。README 為德文。 _(線材、AMS 與 RFID)_
+- **[kanbambu](https://github.com/akilea/kanbambu)** — 自架的列印專案看板（FastAPI + SQLite，Docker）：拖入 .gcode.3mf 即可讀出列印時間、每色克數與預覽圖，並追蹤份數、列印板、成功與失敗及重印紀錄；不連 Bambu 雲端也不連印表機。README 為法文。 _(列印農場與佇列)_
 - **[simplyusage](https://github.com/wendsell/simplyusage)** — 從 Bambu Studio 或 Orca 送出的 Bambu 列印結束時，讀取列印檔中各顏色的實際用量，並從用到的每個 AMS 槽對應的 SimplyPrint 線材扣除，補上 SimplyPrint 不會替非它自己啟動的列印扣料的缺口。 _(線材、AMS 與 RFID)_
-- **[Spool Inventory](https://github.com/sfandetti/spool-inventory)** — 在自己電腦上執行的本機 App，透過區網連線 Bambu Lab 印表機，顯示每個 AMS 槽裝了什麼、每捲還剩多少，並管理架上庫存：可用 Flipper Zero 掃描 Bambu 線材再透過 USB 同步、讓線材經過 AMS 時自動加入，或手動新增其他品牌。 _(線材、AMS 與 RFID)_
+- **[Spool Inventory](https://github.com/sfandetti/panda-command-3d-desktop)** — 在自己電腦上執行的本機 App，透過區網連線 Bambu Lab 印表機，顯示每個 AMS 槽裝了什麼、每捲還剩多少，並管理架上庫存：可用 Flipper Zero 掃描 Bambu 線材再透過 USB 同步、讓線材經過 AMS 時自動加入，或手動新增其他品牌。 _(線材、AMS 與 RFID)_
 - **[Bambu NFC](https://github.com/faraztp/bambu-nfc)** — 在 macOS 上用 PN532 讀卡機處理 Bambu Lab 線軸 MIFARE Classic 1K RFID 標籤的 Python 工具：診斷標籤、顯示線材資料、傾印內容，並改寫成標準 NDEF 標籤（網址、文字、Wi-Fi 憑證或原始位元組），金鑰由 UID 推導。 _(線材、AMS 與 RFID)_
 - **[PixxelSpool](https://github.com/pixxelhoff/PixxelSpool)** — 給 Bambu Lab 使用者的自架線材倉儲，可在樹莓派、Mac 或 Windows 電腦上執行：把線材放上 NFC 讀卡機（或放進 AMS）就能看到它是什麼、該放哪裡、還剩多少；會與 AMS 同步、檢查列印任務與 3MF 檔，並能從照片找出顏色，不需帳號或雲端。目前為 beta 版。 _(線材、AMS 與 RFID)_
 - **[Bambu Filament Guard](https://github.com/parthalon025/bambu-filament-guard)** — Bambu Studio 的 Windows 輔助工具：每次切片後算出這次列印每種線材需要幾公克（含換色沖刷與擦拭塔），向印表機查詢扣掉正在進行的列印後每捲還剩多少，並在開印前警告哪一捲會不夠。 _(線材、AMS 與 RFID)_
+- **[bambu-bus-reference](https://github.com/heavydms/bambu-bus-reference)** — 非官方、標明資料來源的 Bambu 印表機與 AMS 之間 RS-485 匯流排參考文件，以 X2D 搭配 AMS 2 Pro 實測：訊框格式、訊息類型、時序與第 5／6 腳的緩衝器訊號，附邏輯分析儀擷取繪成的圖，以及用來擷取的 ESP32-S3 橋接／解析韌體與工具。 _(線材、AMS 與 RFID)_
 - **[PrintBot camera](https://github.com/paulnorthup/ha-printbot-camera)** — 給 Bambu Lab H2S 用的 Home Assistant 鏡頭，透過 Home Assistant 內建的 go2rtc 以 WebRTC 播放印表機 1080p/30 fps 即時畫面，只對印表機保持一條連線，避免儀表板的 HLS 與 WebRTC 播放器互相干擾而卡頓。 _(鏡頭與縮時)_
-- **[bambu-dash](https://github.com/zwmwei/bambu-dash)** — 只走區網的拓竹印表機即時看板，有網頁、Android APK 與 NAS Docker 三種形態：進度、溫度與 5 分鐘曲線、AMS 料盤、風扇、HMS 警示、鏡頭（RTSPS 轉 MJPEG）、艙內燈與暫停／繼續／停止（需開發者模式），可自動發現印表機；在 P2S 上開發與實測。README 為簡體中文。 _(儀表板、螢幕與 App)_
 - **[Pygmy](https://github.com/danderik88/pygmy)** — 自架的 Docker App，不經雲端就能在手機上操作僅區網的 Bambu Lab 與 Klipper 印表機：即時鏡頭、控制、通知、炒麵偵測、一鍵列印，以及給 AI 代理用的 MCP；目前為早期預覽版。 _(儀表板、螢幕與 App)_
 - **[BambuBar for Omarchy](https://github.com/tripex/omarchy-bambubar)** — Omarchy 狀態列小工具與面板，顯示 Bambu Lab 印表機的進度、剩餘時間、溫度（H2D/X2D 顯示雙噴頭），以及每台 AMS 的線材實際顏色與濕度，列印結束時會通知；起源於 macOS 版 BambuBar 的 Omarchy 移植。 _(儀表板、螢幕與 App)_
 - **[Bambu for UltraBar Studio](https://github.com/qlerup/ultrabar-bambu)** — 給 CoreBAR 顯示器用的 Bambu 區網印表機小工具，在電腦上的 UltraBar Studio 設定，會釘選每台印表機的 TLS 憑證，並把即時讀數與控制傳到顯示器上。 _(儀表板、螢幕與 App)_
 - **[Bambu Monitor for Flexbar](https://github.com/UpKiry/flexbar-bambu-monitor)** — 唯讀的 FlexDesigner 外掛，在 Flexbar 上顯示 Bambu Lab 印表機的雲端狀態（狀態、任務、進度、剩餘時間、層數、溫度、AMS 槽位），透過本機瀏覽器頁面登入，不需填區網 IP 與存取碼；支援中國大陸與全球帳號。README 為簡體中文。 _(儀表板、螢幕與 App)_
 - **[BambuPresence](https://github.com/ryanpcorg/BambuPresence)** — 輕量的純 Go 桌面 App，透過區網 MQTT 連線 Bambu Lab 印表機，把即時列印狀態顯示為 Discord Rich Presence：機型圖片、預估完成或已耗時間、層數、溫度、使用中的 AMS 線軸、HMS 錯誤解碼，另有 Windows 通知。 _(儀表板、螢幕與 App)_
+- **[Printvault](https://github.com/emphyri0/printvault)** — 自架的列印紀錄庫（照片、模型檔、線材、列印時間、設定、筆記、保養工作），透過唯讀的區網 MQTT 連線自動記錄每次 Bambu 列印，雲端模式照常可用；可從 MakerWorld 連結或切好的 3MF／G-code 匯入，並加入鏡頭快照、溫度圖表與 HMS 錯誤碼。目前只在 P2S 上實機測試，且沒有登入機制，請只在信任的網路中使用。 _(儀表板、螢幕與 App)_
+- **[PRINT//TRACE](https://github.com/Zosuya/print-trace)** — 唯讀的即時 3D 看板，透過 FTPS 下載正在列印的檔案，依印表機的 MQTT 回報逐層畫出 G-code 路徑，可嵌入 OrcaSlicer 或 Bambu Studio 的「裝置」頁；在 A1 上實測，印表機需插 SD 卡。README 有繁體中文與英文。 _(儀表板、螢幕與 App)_
 
 </details>
 
@@ -140,6 +142,7 @@
 - **[Bambu Controller](https://github.com/mrquentin/bambu-controller)** — 小型自架網頁 App，以本機帳號在 LAN-only 模式下監看與控制 Bambu Lab 印表機：SSDP 探索、即時鏡頭（JPEG 或透過 ffmpeg 的 RTSPS）、溫度、風扇、燈光、速度檔位、軸移動與暫停／繼續／停止、AMS 進退料、HMS 警示、可從 `.3mf` 直接開印的 FTPS 檔案瀏覽器，以及 G-code 主控台；協定說明由 LanBu Android App 逆向整理而來。
 - **[bambu-lan-plugin-aarch64](https://github.com/cyrinux/bambu-lan-plugin-aarch64)** — 非官方的開源原生 aarch64 實作，重寫 Bambu 閉源且只有 x86-64 版的網路外掛（`libbambu_networking.so`、`libBambuSource.so`）中的區網部分，讓 arm64 Linux 上的 Bambu Studio 與 OrcaSlicer 能使用印表機探索、裝置分頁、區網列印與即時鏡頭；印表機需為 LAN-only 模式並開啟開發者模式，目前只在 A1 上實測過。
 - **[Orcbro](https://github.com/blankkit/orcbro)** — 自架的容器，透過簡單的 HTTPS/JSON API 把區網模式的 Bambu Lab 印表機橋接到 iOS App Bambro：經 MQTT 讀取狀態與控制、用 OrcaSlicer 命令列與官方 Bambu 設定檔切片 STL、OBJ、STEP 與 3MF，以及送出列印，不需 Bambu 雲端帳號。
+- **[null-bambu-cli](https://github.com/GOROman/null-bambu-cli)** — 給*未*開啟 LAN Only Mode 的 Bambu Lab 印表機用的 Python 命令列工具（`nbc`）：以 SSDP 探索印表機並釘選憑證指紋，透過區網 MQTT 讀取狀態與 AMS／料架線材，並經區網列出、上傳或刪除內部或外部儲存空間上的切片檔。
 
 ## Home Assistant 與自動化
 
@@ -222,7 +225,7 @@
 - **[bambu2prusa](https://github.com/charliejgallo/bambu2prusa)** — 轉換 Bambu Studio 3MF 專案讓 PrusaSlicer 能開啟，每個列印板輸出一個檔案，保留負體與修改器；測試仍有限。
 - **[3MF Colour Converter](https://github.com/haglundmorten-code/3mf-colour-converter)** — 在瀏覽器中把已上色的多色專案在 Bambu Studio / OrcaSlicer 與 PrusaSlicer 之間轉換，不用重新上色，並保留零件與修改器；檔案不會上傳。
 - **[OrcaSlicer Nonplanar](https://github.com/fich-l/orcaslicer-nonplanar)** — OrcaSlicer 2.4.2 的測試版，讓 12° 以內的緩坡頂面以非平面方式列印，每段非平面移動都會對照噴頭模型檢查；社群實測 A1、A1 mini、P1S、P2S、X1C、X2D、H2D 可用。官方建置僅支援 Apple Silicon 的 macOS。
-- **[slicer-engine-wasm](https://github.com/perierhq/slicer-engine-wasm)** — 把 Bambu Studio 的切片引擎（不含 GUI）編譯成 WebAssembly 的建置腳本與修補，可以在手機上或 Node 底下離線切 3MF；發行版附 engine.wasm 與校驗碼。AGPL-3.0，與 Bambu Lab 無關。
+- **[slicer-engine-wasm](https://github.com/gantry3d/slicer-engine-wasm)** — 把 Bambu Studio 的切片引擎（不含 GUI）編譯成 WebAssembly 的建置腳本與修補，可以在手機上或 Node 底下離線切 3MF；發行版附 engine.wasm 與校驗碼。AGPL-3.0，與 Bambu Lab 無關。
 - **[bambu-auto-wipe](https://github.com/langkuo/bambu-auto-wipe)** — Bambu Studio 後處理腳本，依累計擠出長度自動插入擦嘴動作，只在填充段觸發，內建 H2D、A1／A1 mini、P1P／P1S 與 X1／X1C 設定。
 - **[Preset Doctor](https://github.com/smehl86/preset-doctor)** — 離線 Windows 工具，找出 Bambu Studio 或 OrcaSlicer 更新後因父設定檔改名而消失的自訂線材、製程與印表機設定檔，並加以修復。
 - **[bambu-studio-wasm](https://github.com/3dfarmers/bambu-studio-wasm)** — 把 Bambu Studio v02.09.01.70 的命令列切片器與 libslic3r 編譯成 WebAssembly，讓網頁能在訪客自己的電腦上切 Bambu Studio 專案；實驗性質，AGPL-3.0。
@@ -235,6 +238,8 @@
 - **[MakerWorld Settings Importer for OrcaSlicer](https://github.com/FleeceFlames/Orca_makerworld_importer)** — OrcaSlicer 2.5 以上的 Python 外掛，把 MakerWorld 的 `.3mf`（通常為拓竹印表機切好）轉換到你目前使用的印表機：只把原作者相容的列印參數疊加到你自己的印表機、列印板與線材預設上，並輸出變更紀錄。
 - **[bambu-slice-mcp](https://github.com/ZHT0711/bambu-slice-mcp)** — MCP 伺服器，透過命令列無頭執行 Bambu Studio／OrcaSlicer 自己的切片引擎，並可對某個參數（層高、支撐閾值、填充…）連續掃描數組，回報每組實測的列印時間與耗材用量；也會攤平命令列不會處理的預設繼承鏈。
 - **[NoCali](https://github.com/HanSur94/nocali)** — 給 X1 Carbon／X1 用的小型本機網頁：從切好的檔案移除震動（共振）校正，把處理後的檔案交給 Bambu Connect 開印，並即時顯示印表機狀態（進度、溫度、風扇、AMS 線材、以白話呈現的 HMS 錯誤、鏡頭）；印表機維持一般雲端模式。
+- **[BatchSlicer](https://github.com/drak42/batch_slicer)** — Linux 命令列工具（`pipx install batchslicer`），用 Bambu Studio、OrcaSlicer 或 Creality Print 自己的命令列與你已設定好的印表機、線材與製程預設，切片單一模型或整個資料夾：把套件零件排到列印板上、複製多份、填好多色 3MF 的每個線材槽、在 G-code 裡加入預覽圖，並支援監看資料夾；直接傳送只支援 Klipper 與 OctoPrint，不支援 Bambu 印表機。
+- **[EmberCheck](https://github.com/drewrobinso/embercheck)** — 在本機執行、類似 Helio 的 Bambu Studio G-code 後處理工具：逐層熱檢查並產生 HTML 熱度圖報告，再把過熱的層放慢、把較冷的層的內牆與填充加速，修正懸垂與橋接的風扇設定、找出缺少的回抽，並重排空跑路徑；提供 Windows 安裝程式，macOS 與其他系統有預覽版 Python 版本。
 
 ## 列印農場與佇列
 
@@ -255,6 +260,7 @@
 - **[printfarm-planner](https://github.com/projectbin07-stack/printfarm-planner)** — 為混合印表機群（Bambu Lab P1S、A1、A1 Mini 或自訂機型）規劃生產排程，考量操作人員在場時段、AMS、材料與噴嘴限制，輸出排程、稼動率數據與可在瀏覽器開啟的甘特圖。
 - **[InvenTree Bambuddy](https://github.com/nemccarthy/inventree-bambuddy)** — 透過 Bambuddy 列印零件的 InvenTree 外掛：把零件連到切片檔，按下 Print 即建立製造工單並把列印板排入 Bambuddy 佇列（暫不開印），印完後把良品入庫；也可在庫存低於下限時自動排印。
 - **[bambu-autoeject](https://github.com/bullsrobo-boop/bambu-autoeject)** — 把多個切好的列印板合併成一個 Bambu Lab A1 任務：每印完一件就讓熱床降溫、用噴頭把零件從前方推下，再開始下一件，不需額外硬體或改韌體；目前為 alpha 版，尚未在實機上測試。
+- **[kanbambu](https://github.com/akilea/kanbambu)** — 自架的列印專案看板（FastAPI + SQLite，Docker）：拖入 .gcode.3mf 即可讀出列印時間、每色克數與預覽圖，並追蹤份數、列印板、成功與失敗及重印紀錄；不連 Bambu 雲端也不連印表機。README 為法文。
 
 ## 線材、AMS 與 RFID
 
@@ -281,10 +287,11 @@
 - **[Spoolbook](https://github.com/Infraviored/spoolbook)** — Home Assistant 整合，追蹤 Bambu Lab AMS 裡的每一捲線材（包含第三方線材），提供 AMS 總覽、列印時即時用量、秤重與 QR 標籤。
 - **[Bambu Filament Scanner](https://github.com/talla83/bambu-filament-scanner)** — Android App（8.0 以上），讀取原廠拓竹線材盤上的 MIFARE Classic 1K NFC 標籤，顯示材料、類型、顏色（含拓竹色名）、線徑、重量、長度、溫度、烘乾與生產日期，並在本機保存掃描紀錄；只讀不寫，手機需支援 MIFARE Classic。README 為德文。
 - **[simplyusage](https://github.com/wendsell/simplyusage)** — 從 Bambu Studio 或 Orca 送出的 Bambu 列印結束時，讀取列印檔中各顏色的實際用量，並從用到的每個 AMS 槽對應的 SimplyPrint 線材扣除，補上 SimplyPrint 不會替非它自己啟動的列印扣料的缺口。
-- **[Spool Inventory](https://github.com/sfandetti/spool-inventory)** — 在自己電腦上執行的本機 App，透過區網連線 Bambu Lab 印表機，顯示每個 AMS 槽裝了什麼、每捲還剩多少，並管理架上庫存：可用 Flipper Zero 掃描 Bambu 線材再透過 USB 同步、讓線材經過 AMS 時自動加入，或手動新增其他品牌。
+- **[Spool Inventory](https://github.com/sfandetti/panda-command-3d-desktop)** — 在自己電腦上執行的本機 App，透過區網連線 Bambu Lab 印表機，顯示每個 AMS 槽裝了什麼、每捲還剩多少，並管理架上庫存：可用 Flipper Zero 掃描 Bambu 線材再透過 USB 同步、讓線材經過 AMS 時自動加入，或手動新增其他品牌。
 - **[Bambu NFC](https://github.com/faraztp/bambu-nfc)** — 在 macOS 上用 PN532 讀卡機處理 Bambu Lab 線軸 MIFARE Classic 1K RFID 標籤的 Python 工具：診斷標籤、顯示線材資料、傾印內容，並改寫成標準 NDEF 標籤（網址、文字、Wi-Fi 憑證或原始位元組），金鑰由 UID 推導。
 - **[PixxelSpool](https://github.com/pixxelhoff/PixxelSpool)** — 給 Bambu Lab 使用者的自架線材倉儲，可在樹莓派、Mac 或 Windows 電腦上執行：把線材放上 NFC 讀卡機（或放進 AMS）就能看到它是什麼、該放哪裡、還剩多少；會與 AMS 同步、檢查列印任務與 3MF 檔，並能從照片找出顏色，不需帳號或雲端。目前為 beta 版。
 - **[Bambu Filament Guard](https://github.com/parthalon025/bambu-filament-guard)** — Bambu Studio 的 Windows 輔助工具：每次切片後算出這次列印每種線材需要幾公克（含換色沖刷與擦拭塔），向印表機查詢扣掉正在進行的列印後每捲還剩多少，並在開印前警告哪一捲會不夠。
+- **[bambu-bus-reference](https://github.com/heavydms/bambu-bus-reference)** — 非官方、標明資料來源的 Bambu 印表機與 AMS 之間 RS-485 匯流排參考文件，以 X2D 搭配 AMS 2 Pro 實測：訊框格式、訊息類型、時序與第 5／6 腳的緩衝器訊號，附邏輯分析儀擷取繪成的圖，以及用來擷取的 ESP32-S3 橋接／解析韌體與工具。
 
 ## 鏡頭與縮時
 
@@ -352,6 +359,8 @@
 - **[Bambu for UltraBar Studio](https://github.com/qlerup/ultrabar-bambu)** — 給 CoreBAR 顯示器用的 Bambu 區網印表機小工具，在電腦上的 UltraBar Studio 設定，會釘選每台印表機的 TLS 憑證，並把即時讀數與控制傳到顯示器上。
 - **[Bambu Monitor for Flexbar](https://github.com/UpKiry/flexbar-bambu-monitor)** — 唯讀的 FlexDesigner 外掛，在 Flexbar 上顯示 Bambu Lab 印表機的雲端狀態（狀態、任務、進度、剩餘時間、層數、溫度、AMS 槽位），透過本機瀏覽器頁面登入，不需填區網 IP 與存取碼；支援中國大陸與全球帳號。README 為簡體中文。
 - **[BambuPresence](https://github.com/ryanpcorg/BambuPresence)** — 輕量的純 Go 桌面 App，透過區網 MQTT 連線 Bambu Lab 印表機，把即時列印狀態顯示為 Discord Rich Presence：機型圖片、預估完成或已耗時間、層數、溫度、使用中的 AMS 線軸、HMS 錯誤解碼，另有 Windows 通知。
+- **[Printvault](https://github.com/emphyri0/printvault)** — 自架的列印紀錄庫（照片、模型檔、線材、列印時間、設定、筆記、保養工作），透過唯讀的區網 MQTT 連線自動記錄每次 Bambu 列印，雲端模式照常可用；可從 MakerWorld 連結或切好的 3MF／G-code 匯入，並加入鏡頭快照、溫度圖表與 HMS 錯誤碼。目前只在 P2S 上實機測試，且沒有登入機制，請只在信任的網路中使用。
+- **[PRINT//TRACE](https://github.com/Zosuya/print-trace)** — 唯讀的即時 3D 看板，透過 FTPS 下載正在列印的檔案，依印表機的 MQTT 回報逐層畫出 G-code 路徑，可嵌入 OrcaSlicer 或 Bambu Studio 的「裝置」頁；在 A1 上實測，印表機需插 SD 卡。README 有繁體中文與英文。
 
 ## 橋接與 AI 代理
 
